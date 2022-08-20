@@ -52,18 +52,18 @@ export const WARNING = {
 };
 
 export const GREY = {
-    50: alpha('#FFFFFF', 0.01),
-    100: alpha('#FFFFFF', 0.16),
-    200: alpha('#FFFFFF', 0.85),
-    300: '#FFFFFF',
-    400: alpha('#050038', 0.04),
-    500: alpha('#050038', 0.04),
-    600: alpha('#050038', 0.1),
-    700: alpha('#050038', 0.1),
-    800: alpha('#050038', 0.85),
-    900: '#050038',
-    A100: alpha('#FFFFFF', 0.16),
-    A200: alpha('#FFFFFF', 0.85),
-    A400: alpha('#050038', 0.04),
-    A700: alpha('#050038', 0.1),
-}
+  50: alpha('#FFFFFF', 0.01),
+  100: alpha('#FFFFFF', 0.16),
+  200: alpha('#FFFFFF', 0.85),
+  300: '#FFFFFF',
+  400: alpha('#050038', 0.04),
+  500: alpha('#050038', 0.04),
+  600: alpha('#050038', 0.1),
+  700: alpha('#050038', 0.1),
+  800: alpha('#050038', 0.85),
+  900: '#050038',
+  A100: alpha('#FFFFFF', 0.16),
+  A200: alpha('#FFFFFF', 0.85),
+  A400: alpha('#050038', 0.04),
+  A700: alpha('#050038', 0.1),
+};

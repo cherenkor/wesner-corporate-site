@@ -3,8 +3,6 @@ import { pxToRem, responsiveFontSizes } from './utils/font.ustils';
 const HEADING_FONT = "'Space Grotesk', sans-serif";
 const BASE_FONT = "'IBM Plex Sans', sans-serif";
 
-
-
 export const typography = {
   fontFamily: BASE_FONT,
   h1: {
