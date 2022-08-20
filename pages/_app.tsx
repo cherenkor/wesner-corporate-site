@@ -1,8 +1,19 @@
-import '../styles/globals.css';
-import type { AppProps } from 'next/app';
+import type { AppLayoutProps } from 'next/app';
+import { ReactQueryProvider } from '@providers/react-query.provider';
+import { NextIntlProvider } from '@providers/next-intl.provider';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+import '@styles/globals.css';
+
+function MyApp({ Component, pageProps }: AppLayoutProps) {
+  const getLayout = Component.getLayout ?? ((page: JSX.Element) => page);
+
+  return (
+    <NextIntlProvider pageProps={pageProps}>
+      <ReactQueryProvider>
+        {getLayout(<Component {...pageProps} />)}
+      </ReactQueryProvider>
+    </NextIntlProvider>
+  );
 }
 
 export default MyApp;
