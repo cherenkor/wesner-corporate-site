@@ -1,5 +1,6 @@
 import { LocaleSwitcher } from '@components/ui/ui-locale-switcher';
 import { PropsWithChildren } from 'react';
+import Footer from './footer';
 
 export const BaseLayout = ({ children }: PropsWithChildren) => {
   return (
@@ -8,6 +9,7 @@ export const BaseLayout = ({ children }: PropsWithChildren) => {
         <LocaleSwitcher />
       </div>
       <div>{children}</div>
+      <Footer />
     </div>
   );
 };
