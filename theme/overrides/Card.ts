@@ -6,7 +6,7 @@ export default function Card(theme: Theme): Components {
       styleOverrides: {
         root: {
           boxShadow: 'none',
-          color: theme.palette.grey[800],
+          color: theme.palette.text.primary,
           backgroundColor: theme.palette.background.darken,
         },
       },

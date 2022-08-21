@@ -16,5 +16,14 @@
       "number": "Drei",
       "description": "Sobald wir uns auf die Lösung geeinigt haben, werden wir sie implementieren, indem wir Ihnen unseren besten Service bieten."
     }
+  },
+  "whywe": {
+    "title": "Warum wir",
+    "description": "Mit unseren intelligenten Integrationslösungen auf der Microsoft-Plattform machen wir Sie schlau: nämlich fit für den Wettbewerb in der API-Ökonomie. Ihre Daten sind das neue Öl und Integration der entscheidende Wettbewerbsvorteil. Sie erhalten die Möglichkeit, auf Daten aus beliebigen Quellen innerhalb und außerhalb des Unternehmens zuzugreifen und diese über durchgängig digital gesteuerte Prozesse jedem Nutzer zur Verfügung zu stellen:",
+    "checkOne": "Nahtlose <important>Integration Ihrer Anwendungen</important>, Daten und Prozesse miteinander.",
+    "checkTwo": "Nahtlose <important>Integration mit Ihren Kunden</important>, Partnern und mit den neuen Möglichkeiten von KI und maschinellem Lernen.",
+    "years": "Langjährige Erfahrung",
+    "clients": "Zufriedene Kunden",
+    "projects": "Projekte abgeschlossen"
   }
 }

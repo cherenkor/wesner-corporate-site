@@ -44,4 +44,9 @@ export const palette: PaletteOptions = {
     darken: 'rgba(64, 84, 215, 0.04)',
     lighten: GREY[100],
   },
+  text: {
+    primary: GREY[900],
+    secondary: GREY[800],
+    disabled: GREY[500],
+  }
 };

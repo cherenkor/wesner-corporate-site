@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { useTranslations } from 'next-intl';
 import AproachItem from 'components/features/home/aproach-item';
-import { useGetAproachesConfig } from 'models/configs/aproaches.config';
+import { useGetAproachesConfig } from 'models/configs/home/aproaches.config';
 
 export default function AproachSection(): JSX.Element {
   const t = useTranslations();

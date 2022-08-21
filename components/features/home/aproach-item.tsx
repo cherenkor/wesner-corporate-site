@@ -37,7 +37,9 @@ export default function AproachItem({
         >
           {title}
         </Typography>
-        <Typography variant={textVariant}>{description}</Typography>
+        <Typography variant={textVariant} color="text.secondary">
+          {description}
+        </Typography>
       </CardContent>
     </Card>
   );

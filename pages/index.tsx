@@ -3,10 +3,12 @@ import { BaseLayout } from '@components/layouts/base-layout';
 import { ReactElement } from 'react';
 import ContactUs from 'components/shared/contact-us/contact-us';
 import AproachSection from 'components/features/home/aproach-section';
+import WhyWeSection from 'components/features/home/why-we-section';
 
 const Home: NextPage = () => {
   return (
     <>
+      <WhyWeSection />
       <AproachSection />
       <ContactUs />
     </>

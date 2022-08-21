@@ -5,6 +5,7 @@ import Phone from '/public/icons/phone.svg';
 import Facebook from '/public/icons/facebook.svg';
 import Twitter from '/public/icons/twitter.svg';
 import LinkedIn from '/public/icons/linkedin.svg';
+import Check from '/public/icons/check.svg';
 
 export const MapIcon = (props: SvgIconProps): JSX.Element => {
   return (
@@ -38,6 +39,17 @@ export const PhoneIcon = (props: SvgIconProps): JSX.Element => {
     />
   );
 };
+
+export const CheckIcon = (props: SvgIconProps): JSX.Element => {
+    return (
+      <SvgIcon
+        component={Check}
+        inheritViewBox
+        {...props}
+        sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
+      />
+    );
+  };
 
 // SOCIAL
 
