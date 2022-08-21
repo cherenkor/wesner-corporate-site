@@ -15,6 +15,13 @@ declare module '@mui/material/Button' {
   }
 }
 
+declare module '@mui/material/styles/createPalette' {
+  interface TypeBackground {
+    darken: string;
+    lighten: string;
+  }
+}
+
 export const PRIMARY = {
   light: alpha('#4054D7', 0.2),
   main: '#4054D7',

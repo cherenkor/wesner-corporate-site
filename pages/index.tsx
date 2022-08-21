@@ -1,15 +1,15 @@
 import type { NextPage } from 'next';
 import { BaseLayout } from '@components/layouts/base-layout';
 import { ReactElement } from 'react';
-import Box from '@mui/material/Box';
 import ContactUs from 'components/shared/contact-us/contact-us';
+import AproachSection from 'components/features/home/aproach-section';
 
 const Home: NextPage = () => {
-
   return (
-    <Box>
-        <ContactUs />
-    </Box>
+    <>
+      <AproachSection />
+      <ContactUs />
+    </>
   );
 };
 

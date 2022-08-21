@@ -38,4 +38,10 @@ export const palette: PaletteOptions = {
   },
   grey: { ...GREY },
   divider: GREY[100],
+  background: {
+    paper: '#fff',
+    default: '#fff',
+    darken: 'rgba(64, 84, 215, 0.04)',
+    lighten: GREY[100],
+  },
 };

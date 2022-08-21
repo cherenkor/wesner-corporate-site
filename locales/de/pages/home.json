@@ -1,3 +1,20 @@
 {
-  "page-title": "Heimat"
+  "aproaches": {
+    "title": "Unser Vorgehen",
+    "research": {
+      "title": "Forschung",
+      "number": "Einer",
+      "description": "Wir werden die Herausforderungen/Anforderungen Ihres Unternehmens untersuchen, um zu verstehen, wie wir Ihnen einen Mehrwert bieten können."
+    },
+    "solution": {
+      "title": "Lösung",
+      "number": "Zwei",
+      "description": "Nach der Recherche finden wir die skalierbare und für Sie am besten geeignete Lösung."
+    },
+    "implementation": {
+      "title": "Implementierung",
+      "number": "Drei",
+      "description": "Sobald wir uns auf die Lösung geeinigt haben, werden wir sie implementieren, indem wir Ihnen unseren besten Service bieten."
+    }
+  }
 }

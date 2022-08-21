@@ -1,3 +1,20 @@
 {
-  "page-title": "Home"
+  "aproaches": {
+    "title": "Our Approach",
+    "research": {
+      "title": "Research",
+      "number": "One",
+      "description": "We will examine your company challenges/ needs to understand how we may bring value to you."
+    },
+    "solution": {
+      "title": "Solution",
+      "number": "Two",
+      "description": "After the research we will come up with the scalable and the most suitable solution for you."
+    },
+    "implementation": {
+      "title": "Implementation",
+      "number": "Three",
+      "description": "Once we agree on the solution we will implement it via delivering our best services to you."
+    }
+  }
 }
