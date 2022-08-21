@@ -73,6 +73,7 @@ export const typography = {
     fontSize: pxToRem(16),
     lineHeight: 24 / 16,
     fontWeight: 700,
+    fontFamily: HEADING_FONT,
     ...responsiveFontSizes({ sm: 16, md: 16, lg: 18 }),
   },
 };

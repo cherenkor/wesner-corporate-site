@@ -1,19 +1,15 @@
 import type { NextPage } from 'next';
-import { useTranslations } from 'use-intl';
 import { BaseLayout } from '@components/layouts/base-layout';
 import { ReactElement } from 'react';
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import ContactUs from 'components/shared/contact-us/contact-us';
 
 const Home: NextPage = () => {
-  const t = useTranslations();
 
   return (
-    <div>
-      <Typography variant="h1"> Test multi languages feature</Typography>
-      <div>Greetings: {t('greetings')}</div>
-      <div>Title: {t('app-title')}</div>
-      <div>Page title: {t('page-title')}</div>
-    </div>
+    <Box>
+        <ContactUs />
+    </Box>
   );
 };
 

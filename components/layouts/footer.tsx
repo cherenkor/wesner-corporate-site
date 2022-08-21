@@ -40,7 +40,7 @@ export default function Footer(): JSX.Element {
             >
               <Box flexBasis={{ xs: '100%', sm: '40%', md: 'auto' }}>
                 <Typography variant="h6" mb={2}>
-                {t('footer.menu')}
+                  {t('footer.menu')}
                 </Typography>
                 <Stack gap={1}>
                   {mainNavConfig.map(({ name, path }) => (

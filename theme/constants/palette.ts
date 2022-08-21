@@ -9,6 +9,12 @@ declare module '@mui/material/styles' {
   }
 }
 
+declare module '@mui/material/Button' {
+  interface ButtonPropsColorOverrides {
+    tetriary: true;
+  }
+}
+
 export const PRIMARY = {
   light: alpha('#4054D7', 0.2),
   main: '#4054D7',

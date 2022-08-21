@@ -1,6 +1,4 @@
 {
-  "app-title": "Wesnera",
-  "greetings": "Guten Tag",
   "footer": {
     "title": "Nahtlose Lösungen vom Backend bis zum Internet der Dinge.",
     "menu": "Speisekarte",
@@ -14,5 +12,10 @@
     "careers": "Karriere",
     "terms": "Geschäftsbedingungen",
     "policy": "Datenschutz-Bestimmungen"
+  },
+  "contactUs": {
+    "title": "Lass uns zusammen arbeiten",
+    "description": "Wenn Sie es brauchen, können wir es bauen. Unsere Mitarbeiter liefern maximalen Mehrwert durch Flexibilität, Vielseitigkeit und Einstellung.",
+    "button": "Kontaktiere uns"
   }
 }

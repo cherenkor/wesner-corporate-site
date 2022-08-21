@@ -42,32 +42,32 @@ export const PhoneIcon = (props: SvgIconProps): JSX.Element => {
 // SOCIAL
 
 export const FacebookIcon = (props: SvgIconProps): JSX.Element => {
-    return (
-      <SvgIcon
-        component={Facebook}
-        inheritViewBox
-        {...props}
-        sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
-      />
-    );
-  };
-  export const TwitterIcon = (props: SvgIconProps): JSX.Element => {
-    return (
-      <SvgIcon
-        component={Twitter}
-        inheritViewBox
-        {...props}
-        sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
-      />
-    );
-  };
-  export const LinkedInIcon = (props: SvgIconProps): JSX.Element => {
-    return (
-      <SvgIcon
-        component={LinkedIn}
-        inheritViewBox
-        {...props}
-        sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
-      />
-    );
-  };
+  return (
+    <SvgIcon
+      component={Facebook}
+      inheritViewBox
+      {...props}
+      sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
+    />
+  );
+};
+export const TwitterIcon = (props: SvgIconProps): JSX.Element => {
+  return (
+    <SvgIcon
+      component={Twitter}
+      inheritViewBox
+      {...props}
+      sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
+    />
+  );
+};
+export const LinkedInIcon = (props: SvgIconProps): JSX.Element => {
+  return (
+    <SvgIcon
+      component={LinkedIn}
+      inheritViewBox
+      {...props}
+      sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
+    />
+  );
+};
