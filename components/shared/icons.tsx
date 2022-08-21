@@ -41,15 +41,15 @@ export const PhoneIcon = (props: SvgIconProps): JSX.Element => {
 };
 
 export const CheckIcon = (props: SvgIconProps): JSX.Element => {
-    return (
-      <SvgIcon
-        component={Check}
-        inheritViewBox
-        {...props}
-        sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
-      />
-    );
-  };
+  return (
+    <SvgIcon
+      component={Check}
+      inheritViewBox
+      {...props}
+      sx={{ color: 'rgba(0,0,0,0)', ...props.sx }}
+    />
+  );
+};
 
 // SOCIAL
 

@@ -25,8 +25,14 @@ export default function AproachItem({
   const textVariant = isMobile ? 'body2' : 'body1';
 
   return (
-    <Card sx={{ height: 1 }}>
-      <CardContent sx={{ py: { xs: 3, md: 5 } }}>
+    <Card
+      sx={{
+        height: 1,
+        borderTop: `4px solid ${theme.palette.primary.main}`,
+        py: { xs: 3, md: 5 },
+      }}
+    >
+      <CardContent>
         <Typography variant="subtitle1" color="primary.main" mb={1}>
           {number}
         </Typography>

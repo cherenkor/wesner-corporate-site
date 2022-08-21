@@ -48,5 +48,5 @@ export const palette: PaletteOptions = {
     primary: GREY[900],
     secondary: GREY[800],
     disabled: GREY[500],
-  }
+  },
 };

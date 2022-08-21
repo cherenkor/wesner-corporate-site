@@ -4,10 +4,12 @@ import { ReactElement } from 'react';
 import ContactUs from 'components/shared/contact-us/contact-us';
 import AproachSection from 'components/features/home/aproach-section';
 import WhyWeSection from 'components/features/home/why-we-section';
+import ServicesSection from 'components/features/home/services-section';
 
 const Home: NextPage = () => {
   return (
     <>
+      <ServicesSection />
       <WhyWeSection />
       <AproachSection />
       <ContactUs />

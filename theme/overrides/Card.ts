@@ -8,15 +8,22 @@ export default function Card(theme: Theme): Components {
           boxShadow: 'none',
           color: theme.palette.text.primary,
           backgroundColor: theme.palette.background.darken,
+          padding: theme.spacing(3, 3, 5),
+          [theme.breakpoints.down('md')]: {
+            padding: theme.spacing(2, 3),
+          },
         },
       },
     },
     MuiCardContent: {
       styleOverrides: {
         root: {
-          padding: theme.spacing(3, 3, 5),
+          padding: 0,
+          '&:last-child': {
+            padding: 0,
+          },
           [theme.breakpoints.down('md')]: {
-            padding: theme.spacing(2, 3),
+            padding: 0,
           },
         },
       },

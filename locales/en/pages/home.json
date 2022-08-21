@@ -25,5 +25,20 @@
     "years": "Years of Experience",
     "clients": "Satisfied Clients",
     "projects": "Projects Completed"
+  },
+  "services": {
+    "title": "Our Services",
+    "enterprise": {
+      "title": "Enterprise Integration",
+      "description": "Point-to-point connections between the systems to be integrated."
+    },
+    "development": {
+      "title": "Custom Development",
+      "description": "Individual tailor-made software solutions that integrate seamlessly."
+    },
+    "support": {
+      "title": "Support Services",
+      "description": "Operation tasks and always keep it up to date with the latest technology."
+    }
   }
 }
