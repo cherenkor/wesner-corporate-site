@@ -5,10 +5,12 @@ import ContactUs from 'components/shared/contact-us/contact-us';
 import AproachSection from 'components/features/home/aproach-section';
 import WhyWeSection from 'components/features/home/why-we-section';
 import ServicesSection from 'components/features/home/services-section';
+import Banner from 'components/features/home/banner';
 
 const Home: NextPage = () => {
   return (
     <>
+      <Banner />
       <ServicesSection />
       <WhyWeSection />
       <AproachSection />
