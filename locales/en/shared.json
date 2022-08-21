@@ -1,4 +1,18 @@
 {
   "app-title": "Wesnera",
-  "greetings": "Hello World"
+  "greetings": "Hello World",
+  "footer": {
+    "title": "Seamless solutions from the back-end to the Internet of Things.",
+    "menu": "Menu",
+    "office": "Office",
+    "contacts": "Contacts"
+  },
+  "navigation": {
+    "services": "Services",
+    "caseStudies": "Case Studies",
+    "company": "Company",
+    "careers": "Careers",
+    "terms": "Terms and Conditions",
+    "policy": "Privacy Policy"
+  }
 }

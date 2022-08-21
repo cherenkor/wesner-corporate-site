@@ -1,36 +1,46 @@
-import Logo from '@components/shared/logo';
-import { Link, Typography, useTheme } from '@mui/material';
+import { MapIcon } from 'components/shared/icons';
+import Logo from 'components/shared/logo';
+import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import { Container } from '@mui/system';
-import { mainNavConfig } from 'models/configs/main-nav.config';
+import { useGetMainNavConfig } from 'models/configs/main-nav.config';
 import NextLink from 'next/link';
-import React from 'react';
+import FooterContacts from 'components/shared/footer/footer-contacts';
+import FooterBottom from 'components/shared/footer/footer-bottom';
+import { useTranslations } from 'next-intl';
 
 export default function Footer(): JSX.Element {
-  const theme = useTheme();
+  const t = useTranslations();
+  const mainNavConfig = useGetMainNavConfig();
+
   return (
     <Box component="section" bgcolor="grey.900" color="grey.200">
-      <Container fixed={true} sx={{ py: 8 }}>
-        <Grid container columnSpacing={12}>
+      <Container fixed={true} sx={{ py: { xs: 5, md: 6, lg: 8 } }}>
+        <Grid container columnSpacing={12} rowSpacing={{ xs: 3, lg: 0 }}>
           <Grid item xs={12} lg={4}>
             <Stack gap={1}>
-              <Logo />
-              <Typography variant="body2">
+              <Logo isSmall />
+              <Typography variant="body2" fontSize={{ xs: 14, lg: 16 }}>
                 Wesner-Softwareentwicklung GmbH.
               </Typography>
-              <Typography variant="body2">
-                Seamless solutions from the back-end to the Internet of Things.
+              <Typography variant="body2" fontSize={{ xs: 14, lg: 16 }}>
+                {t('footer.title')}
               </Typography>
             </Stack>
           </Grid>
-          <Grid item lg={8}>
-            <Stack direction="row" sx={{ gap: 9 }}>
-              <Box>
+          <Grid item xs={12} lg={8}>
+            <Stack
+              direction="row"
+              sx={{ gap: { xs: 3, lg: 9 } }}
+              justifyContent={{ xs: 'start', md: 'space-between' }}
+              flexWrap="wrap"
+            >
+              <Box flexBasis={{ xs: '100%', sm: '40%', md: 'auto' }}>
                 <Typography variant="h6" mb={2}>
-                  Menu
+                {t('footer.menu')}
                 </Typography>
                 <Stack gap={1}>
                   {mainNavConfig.map(({ name, path }) => (
@@ -42,6 +52,7 @@ export default function Footer(): JSX.Element {
                           cursor: 'pointer',
                           color: 'grey.200',
                           textDecoration: 'none',
+                          fontSize: { xs: 14, lg: 16 },
                         }}
                       >
                         {name}
@@ -50,54 +61,23 @@ export default function Footer(): JSX.Element {
                   ))}
                 </Stack>
               </Box>
-              <Stack gap={2}>
-                <Typography variant="h6">Office</Typography>
-                <Typography variant="body2">
-                  Kornstr. 235 D-28201 Bremen
-                </Typography>
+              <Stack gap={2} flexBasis={{ xs: '100%', sm: '40%', md: 'auto' }}>
+                <Typography variant="h6">{t('footer.office')}</Typography>
+                <Stack direction="row" gap={1}>
+                  <MapIcon sx={{ fontSize: 16, mt: 0.5 }} />
+                  <Typography variant="body2" fontSize={{ xs: 14, lg: 16 }}>
+                    Kornstr. 235
+                    <br /> D-28201 Bremen
+                  </Typography>
+                </Stack>
               </Stack>
+              <FooterContacts />
             </Stack>
           </Grid>
         </Grid>
       </Container>
       <Divider />
-      <Container sx={{ py: 3 }}>
-        <Stack direction="row" justifyContent="space-between">
-          <Typography variant="caption">
-            ©2022 Wesner-Softwareentwicklung GmbH
-          </Typography>
-          <Stack
-            direction="row"
-            sx={{
-              typography: theme.typography.caption,
-            }}
-          >
-            <NextLink href="/policy" passHref>
-              <Link
-                sx={{
-                  color: theme.palette.grey[200],
-                  textDecoration: 'underline',
-                  cursor: 'pointer',
-                }}
-              >
-                Privacy Policy
-              </Link>
-            </NextLink>
-            &nbsp;/&nbsp;
-            <NextLink href="/terms" passHref>
-              <Link
-                sx={{
-                  color: theme.palette.grey[200],
-                  textDecoration: 'underline',
-                  cursor: 'pointer',
-                }}
-              >
-                Terms and Conditions
-              </Link>
-            </NextLink>
-          </Stack>
-        </Stack>
-      </Container>
+      <FooterBottom />
     </Box>
   );
 }

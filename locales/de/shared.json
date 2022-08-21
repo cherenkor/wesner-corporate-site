@@ -1,4 +1,18 @@
 {
-    "app-title": "Wesnera",
-    "greetings": "Guten Tag"
+  "app-title": "Wesnera",
+  "greetings": "Guten Tag",
+  "footer": {
+    "title": "Nahtlose Lösungen vom Backend bis zum Internet der Dinge.",
+    "menu": "Speisekarte",
+    "office": "Büro",
+    "contacts": "Kontakte"
+  },
+  "navigation": {
+    "services": "Dienstleistungen",
+    "caseStudies": "Fallstudien",
+    "company": "Gesellschaft",
+    "careers": "Karriere",
+    "terms": "Geschäftsbedingungen",
+    "policy": "Datenschutz-Bestimmungen"
+  }
 }
