@@ -1,4 +1,3 @@
-
 export enum ERoutes {
   Home = '/',
   Services = '/services',

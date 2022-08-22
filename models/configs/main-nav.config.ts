@@ -2,9 +2,9 @@ import { useTranslations } from 'use-intl';
 import { ERoutes, EServicesRoutes } from './../enums/routes.enum';
 
 export interface IMainNavItem {
-    name: string;
-    path: ERoutes | string;
-    children?: IMainNavItem[];
+  name: string;
+  path: ERoutes | string;
+  children?: IMainNavItem[];
 }
 
 export const useGetMainNavConfig = () => {
