@@ -1,0 +1,7 @@
+{
+    "404": {
+        "title": "Hoppla...",
+        "description": "Die gesuchte Seite wurde nicht gefunden.",
+        "action": "Gehen Sie zur Startseite"
+    }
+}
