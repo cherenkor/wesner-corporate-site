@@ -11,6 +11,7 @@ import NextLink from 'next/link';
 import FooterContacts from 'components/shared/footer/footer-contacts';
 import FooterBottom from 'components/shared/footer/footer-bottom';
 import { useTranslations } from 'next-intl';
+import { ERoutes } from 'models/enums/routes.enum';
 
 export default function Footer(): JSX.Element {
   const t = useTranslations();
@@ -43,22 +44,24 @@ export default function Footer(): JSX.Element {
                   {t('footer.menu')}
                 </Typography>
                 <Stack gap={1}>
-                  {mainNavConfig.map(({ name, path }) => (
-                    <NextLink key={name} href={path} passHref={true}>
-                      <Typography
-                        component="a"
-                        variant="body2"
-                        sx={{
-                          cursor: 'pointer',
-                          color: 'grey.200',
-                          textDecoration: 'none',
-                          fontSize: { xs: 14, lg: 16 },
-                        }}
-                      >
-                        {name}
-                      </Typography>
-                    </NextLink>
-                  ))}
+                  {mainNavConfig
+                    .filter(({ name }) => name !== ERoutes.ContactUs)
+                    .map(({ name, path }) => (
+                      <NextLink key={name} href={path} passHref={true}>
+                        <Typography
+                          component="a"
+                          variant="body2"
+                          sx={{
+                            cursor: 'pointer',
+                            color: 'grey.200',
+                            textDecoration: 'none',
+                            fontSize: { xs: 14, lg: 16 },
+                          }}
+                        >
+                          {name}
+                        </Typography>
+                      </NextLink>
+                    ))}
                 </Stack>
               </Box>
               <Stack gap={2} flexBasis={{ xs: '100%', sm: '40%', md: 'auto' }}>

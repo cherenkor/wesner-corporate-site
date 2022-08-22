@@ -1,3 +1,4 @@
+
 export enum ERoutes {
   Home = '/',
   Services = '/services',
@@ -7,4 +8,10 @@ export enum ERoutes {
   Terms = '/terms',
   Policy = '/policy',
   ContactUs = '/contact-us',
+}
+
+export enum EServicesRoutes {
+  Enterprise = '/enterprise',
+  Development = '/development',
+  Support = '/support',
 }

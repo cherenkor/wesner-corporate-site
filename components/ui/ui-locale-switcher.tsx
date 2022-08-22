@@ -1,33 +1,33 @@
-import Link from 'next/link';
+import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import cn from 'classnames';
+import { Link, useTheme } from '@mui/material';
+import { Stack } from '@mui/system';
+import { localesConfig } from 'models/configs/locales.config';
+import Image from 'next/image';
 
 export const LocaleSwitcher = () => {
   const { locales, route, locale } = useRouter();
+  const theme = useTheme();
 
   return (
-    <div className="wrapper">
-      {(locales || []).map((l) => (
-        <Link key={l} href={route} locale={l}>
-          <a className={cn({ active: locale === l })}>{l}</a>
-        </Link>
+    <Stack direction="row" gap={2}>
+      {localesConfig.map(({ name, img }) => (
+        <NextLink key={name} href={route} locale={name}>
+          <Link
+            component="button"
+            sx={{
+              display: 'inline-flex',
+              outline: '1px solid',
+              outlineColor:
+                locale === name ? theme.palette.secondary.main : 'transparent',
+              outlineOffset: 2,
+              borderRadius: 1,
+            }}
+          >
+            <Image src={img} alt={name} width={24} height={16} />
+          </Link>
+        </NextLink>
       ))}
-      <style jsx>{`
-        .wrapper {
-          margin: 24px;
-        }
-
-        a {
-          border: 1px solid #eaeaea;
-          border-radius: 12px;
-          padding: 8px 12px;
-          margin-right: 12px;
-        }
-
-        a.active {
-          background: #c3b2f3;
-        }
-      `}</style>
-    </div>
+    </Stack>
   );
 };

@@ -11,7 +11,12 @@
     "company": "Company",
     "careers": "Careers",
     "terms": "Terms and Conditions",
-    "policy": "Privacy Policy"
+    "policy": "Privacy Policy",
+    "servicesChildren": {
+      "enterprise": "Enterprise Integration",
+      "development": "Custom Development",
+      "support": "Support Services"
+    }
   },
   "contactUs": {
     "title": "Let’s Work Together",

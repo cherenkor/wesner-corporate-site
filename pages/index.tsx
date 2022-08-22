@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 };
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return <BaseLayout>{page}</BaseLayout>;
+  return <BaseLayout isPrimaryHeader>{page}</BaseLayout>;
 };
 
 export function getStaticProps({ locale }: { locale: string }) {

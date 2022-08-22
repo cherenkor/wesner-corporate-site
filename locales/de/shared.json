@@ -11,7 +11,12 @@
     "company": "Gesellschaft",
     "careers": "Karriere",
     "terms": "Geschäftsbedingungen",
-    "policy": "Datenschutz-Bestimmungen"
+    "policy": "Datenschutz-Bestimmungen",
+    "servicesChildren": {
+      "enterprise": "Unternehmensintegration",
+      "development": "Kundenspezifische Entwicklung",
+      "support": "Support-Services"
+    }
   },
   "contactUs": {
     "title": "Lass uns zusammen arbeiten",

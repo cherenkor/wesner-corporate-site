@@ -8,7 +8,7 @@ import ServiceItem from 'components/features/home/service-item';
 import { useGetServicesConfig } from 'models/configs/home/services.config';
 
 export default function ServicesSection(): JSX.Element {
-  const t = useTranslations('services');
+  const t = useTranslations('');
   const services = useGetServicesConfig();
 
   const getTitleVeriants = useGetResponsiveFontVariants();

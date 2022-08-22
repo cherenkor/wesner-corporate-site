@@ -18,7 +18,7 @@ export default function Banner(): JSX.Element {
     <Box
       bgcolor="primary.main"
       color="grey.200"
-      pt={{ xs: 12, lg: 15 }}
+      pt={{ xs: 6, lg: 7 }}
       pb={{ xs: 6, md: 11, lg: 8 }}
     >
       <Stack
