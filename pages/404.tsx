@@ -2,7 +2,7 @@ import { BaseLayout } from '@components/layouts/base-layout';
 import { Button, Container, Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import { useTranslations } from 'next-intl';
-import { NextPage } from 'next/types';
+import type { NextPage } from 'next';
 import { ReactElement } from 'react';
 import Image from 'next/image';
 import Decoration from 'public/images/404.png';
