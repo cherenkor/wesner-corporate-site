@@ -7,10 +7,9 @@ import Banner from 'components/features/company/banner';
 import Owner from 'components/features/company/owner';
 import Roadmap from 'components/features/company/roadmap';
 import Team, { ITeamMember } from 'components/features/company/team';
-import { server } from 'models/configs';
 
 interface ICompanyPage {
-  team: ITeamMember[];
+  team?: ITeamMember[];
 }
 
 const Company: NextPage<ICompanyPage> = ({ team }) => {
@@ -20,7 +19,7 @@ const Company: NextPage<ICompanyPage> = ({ team }) => {
       <ExpertiseSection />
       <Owner />
       <Roadmap />
-      <Team team={team} />
+      <Team team={team || []} />
       <ContactUs />
     </>
   );
@@ -31,12 +30,10 @@ Company.getLayout = function getLayout(page: ReactElement) {
 };
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
-  const res = await fetch(`${server}/api/company`);
-  const team = await res.json();
 
   return {
     props: {
-      team,
+      team: require(`/data/company/employees.${locale}.json`),
       messages: {
         ...require(`/locales/${locale}/shared.json`),
         ...require(`/locales/${locale}/pages/company.json`),
