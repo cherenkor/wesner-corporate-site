@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import { useGetMainNavConfig } from 'models/configs/main-nav.config';
 import Logo from '../logo';
 import NavigationItem from './navigation-item';
+import MobileNavigation from './mobile-navigation';
 
 interface INavigateion {
   isPrimary?: boolean;
@@ -32,6 +33,7 @@ export default function Navigation({ isPrimary }: INavigateion): JSX.Element {
             <Logo isWhite={isPrimary} />
           </Box>
           <Stack direction="row" alignItems="center" gap={2}>
+            {!isDesktop && <MobileNavigation isPrimary={isPrimary} />}
             {isDesktop && (
               <Box display="flex">
                 {mainNavConfig.map((item) => (

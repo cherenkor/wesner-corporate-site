@@ -43,5 +43,20 @@ export default function Button(theme: Theme): Components {
         },
       },
     },
+    MuiIconButton: {
+      defaultProps: {
+        size: 'small',
+        disableFocusRipple: true,
+        disableTouchRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          color: theme.palette.grey[900],
+        },
+        colorInherit: {
+          color: 'inherit',
+        },
+      },
+    },
   };
 }

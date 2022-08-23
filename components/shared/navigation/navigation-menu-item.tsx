@@ -23,7 +23,7 @@ export default function NavigationMenuItem({
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const { name, path, children } = item;
+  const { name, children } = item;
   return (
     <>
       <Link component="button" sx={sx} onClick={handleClick}>

@@ -8,13 +8,18 @@ import { Link } from '@mui/material';
 interface ILogoProps {
   isWhite?: boolean;
   isSmall?: boolean;
+  onClick?(): void;
 }
 
-export default function Logo({ isWhite, isSmall }: ILogoProps): JSX.Element {
+export default function Logo({
+  isWhite,
+  isSmall,
+  onClick,
+}: ILogoProps): JSX.Element {
   if (isWhite) {
     return (
       <NextLink href={ERoutes.Home} passHref>
-        <Link>
+        <Link onClick={onClick}>
           <LogoWhite />
         </Link>
       </NextLink>
@@ -23,7 +28,7 @@ export default function Logo({ isWhite, isSmall }: ILogoProps): JSX.Element {
   if (isSmall) {
     return (
       <NextLink href={ERoutes.Home} passHref>
-        <Link>
+        <Link onClick={onClick}>
           <LogoSmall />
         </Link>
       </NextLink>
@@ -31,7 +36,7 @@ export default function Logo({ isWhite, isSmall }: ILogoProps): JSX.Element {
   }
   return (
     <NextLink href={ERoutes.Home} passHref>
-      <Link>
+      <Link onClick={onClick}>
         <LogoDefault />
       </Link>
     </NextLink>
