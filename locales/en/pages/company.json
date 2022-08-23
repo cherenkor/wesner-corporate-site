@@ -1,6 +1,11 @@
 {
   "company": {
     "title": "Our Expertise",
+    "banner": {
+      "title": "Connecting the Dots",
+      "description1": "The solutions are always about the realization of intelligent connections of people, systems and processes based on modern, robust technologies - safe, competent and always close to the specific customer needs: in partnership, together on site.",
+      "description2": "We are here for you. Our unique specialization in integration since our founding in 2000 with now +20 years of experience from +800 projects have made QUIBIQ the competence leader for connectivity and seamless integration on the Microsoft platform in Germany."
+    },
     "expertises": {
       "bizTalk": "Point-to-point integration with Azure and BizTalk.",
       "dotNet": "Seamlessly integrated individual software based on .Net.",
