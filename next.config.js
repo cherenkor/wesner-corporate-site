@@ -40,6 +40,9 @@ const nextConfig = {
   eslint: {
     dirs: ['pages', 'providers', 'locales', 'components'], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
   },
+  images: {
+    domains: ['localhost', 'wesner-corporate-site.vercel.app'],
+  },
 };
 
 module.exports = nextConfig;

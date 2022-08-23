@@ -43,7 +43,7 @@ export default function RoadmapItem({
       >
         {year}
       </Typography>
-      <Typography pl={4.5} maxWidth={132} variant="body2">
+      <Typography pl={4.5} maxWidth={132} variant="body2" color="grey.800">
         {description}
       </Typography>
     </Box>

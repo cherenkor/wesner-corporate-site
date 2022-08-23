@@ -6,14 +6,21 @@ import ExpertiseSection from 'components/features/company/expertise-section';
 import Banner from 'components/features/company/banner';
 import Owner from 'components/features/company/owner';
 import Roadmap from 'components/features/company/roadmap';
+import Team, { ITeamMember } from 'components/features/company/team';
+import { server } from 'models/configs';
 
-const Company: NextPage = () => {
+interface ICompanyPage {
+    team: ITeamMember[];
+}
+
+const Company: NextPage<ICompanyPage> = ({ team }) => {
   return (
     <>
       <Banner />
       <ExpertiseSection />
       <Owner />
       <Roadmap />
+      <Team team={team} />
       <ContactUs />
     </>
   );
@@ -23,15 +30,19 @@ Company.getLayout = function getLayout(page: ReactElement) {
   return <BaseLayout>{page}</BaseLayout>;
 };
 
-export function getStaticProps({ locale }: { locale: string }) {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
+  const res = await fetch(`${server}/api/company`);
+  const team = await res.json();
+
   return {
     props: {
+      team,
       messages: {
         ...require(`/locales/${locale}/shared.json`),
         ...require(`/locales/${locale}/pages/company.json`),
       },
     },
   };
-}
+};
 
 export default Company;

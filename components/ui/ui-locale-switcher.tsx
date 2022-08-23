@@ -6,7 +6,7 @@ import { localesConfig } from 'models/configs/locales.config';
 import Image from 'next/image';
 
 export const LocaleSwitcher = () => {
-  const { locales, route, locale } = useRouter();
+  const { route, locale } = useRouter();
   const theme = useTheme();
 
   return (

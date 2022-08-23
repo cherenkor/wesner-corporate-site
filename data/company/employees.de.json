@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Albert Flores",
+    "position": "Ruby On Rails Developer",
+    "image": "public/images/company/team/albert.png"
+  },
+  {
+    "id": 1,
+    "name": "Bessie Cooper",
+    "position": "Information Architect",
+    "image": "public/images/company/team/bessie.png"
+  },
+  {
+    "id": 2,
+    "name": "Jenny Wilson",
+    "position": "Python Developer",
+    "image": "public/images/company/team/jenny.png"
+  },
+  {
+    "id": 3,
+    "name": "Andrew Wilson",
+    "position": "Python Developer",
+    "image": "public/images/company/team/andrew.png"
+  },
+  {
+    "id": 4,
+    "name": "Guy Hawkins",
+    "position": "Ruby On Rails Developer",
+    "image": "public/images/company/team/guy.png"
+  },
+  {
+    "id": 5,
+    "name": "Savannah Nguyen",
+    "position": "Information Architect",
+    "image": "public/images/company/team/savanna.png"
+  },
+  {
+    "id": 6,
+    "name": "Darlene Robertson",
+    "position": "Python Developer",
+    "image": "public/images/company/team/darlene.png"
+  },
+  {
+    "id": 7,
+    "name": "Floyd Miles",
+    "position": "Python Developer",
+    "image": "public/images/company/team/floyd.png"
+  }
+]
