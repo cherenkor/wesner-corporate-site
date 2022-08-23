@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }: AppLayoutProps) {
   return (
     <NextIntlProvider pageProps={pageProps}>
       <Head>
+        <title>Wesner-Softwareentwicklung</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ReactQueryProvider>

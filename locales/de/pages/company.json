@@ -1,0 +1,10 @@
+{
+  "company": {
+    "title": "Our Expertise",
+    "expertises": {
+      "bizTalk": "Point-to-point integration with Azure and BizTalk.",
+      "dotNet": "Seamlessly integrated individual software based on .Net.",
+      "azure": "Seamlessly integrated machine learning based on Azure ML."
+    }
+  }
+}
