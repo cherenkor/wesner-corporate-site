@@ -17,7 +17,7 @@ export default function Banner() {
     <Box>
       <Container sx={{ mt: { xs: 6, lg: 14 }, position: 'relative' }}>
         <Stack
-          maxWidth={{ xs: 1, lg: 576 }}
+          maxWidth={{ xs: 1, lg: 620 }}
           gap={{ xs: 1, lg: 2 }}
           position={{ xs: 'relative', lg: 'absolute' }}
           zIndex={1}
@@ -35,7 +35,7 @@ export default function Banner() {
           <Typography variant={bodyFont} color="grey.800">
             {t('description1')}
           </Typography>
-          <Typography variant={bodyFont} color="grey.800">
+          <Typography variant={bodyFont} color="grey.800" mt={{ lg: -1 }}>
             {t('description2')}
           </Typography>
         </Stack>

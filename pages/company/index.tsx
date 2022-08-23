@@ -4,12 +4,16 @@ import { ReactElement } from 'react';
 import ContactUs from 'components/shared/contact-us/contact-us';
 import ExpertiseSection from 'components/features/company/expertise-section';
 import Banner from 'components/features/company/banner';
+import Owner from 'components/features/company/owner';
+import Roadmap from 'components/features/company/roadmap';
 
 const Company: NextPage = () => {
   return (
     <>
       <Banner />
       <ExpertiseSection />
+      <Owner />
+      <Roadmap />
       <ContactUs />
     </>
   );

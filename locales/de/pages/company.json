@@ -1,15 +1,24 @@
 {
   "company": {
-    "title": "Our Expertise",
+    "title": "Unsere Expertise",
     "banner": {
-      "title": "Connecting the Dots",
-      "description1": "The solutions are always about the realization of intelligent connections of people, systems and processes based on modern, robust technologies - safe, competent and always close to the specific customer needs: in partnership, together on site.",
-      "description2": "We are here for you. Our unique specialization in integration since our founding in 2000 with now +20 years of experience from +800 projects have made QUIBIQ the competence leader for connectivity and seamless integration on the Microsoft platform in Germany."
+      "title": "Die Punkte verbinden",
+      "description1": "Bei den Lösungen geht es immer um die Realisierung intelligenter Verbindungen von Menschen, Systemen und Prozessen auf Basis moderner, robuster Technologien – sicher, kompetent und immer nah an den spezifischen Kundenbedürfnissen: partnerschaftlich, gemeinsam vor Ort.",
+      "description2": "Wir sind für dich da. Unsere einzigartige Spezialisierung auf Integration seit unserer Gründung im Jahr 2000 mit mittlerweile über 20 Jahren Erfahrung aus über 800 Projekten haben QUIBIQ zum Kompetenzführer für Konnektivität und nahtlose Integration auf der Microsoft-Plattform in Deutschland gemacht."
     },
     "expertises": {
-      "bizTalk": "Point-to-point integration with Azure and BizTalk.",
-      "dotNet": "Seamlessly integrated individual software based on .Net.",
-      "azure": "Seamlessly integrated machine learning based on Azure ML."
-    }
+      "bizTalk": "Punkt-zu-Punkt-Integration mit Azure und BizTalk.",
+      "dotNet": "Nahtlos integrierte Individualsoftware auf Basis von .Net.",
+      "azure": "Nahtlos integriertes maschinelles Lernen auf Basis von Azure ML."
+    },
+    "owner": {
+      "title": "Geschichte vom Besitzer",
+      "description": "QUIBIQ wurde im Jahr 2000 in Stuttgart gegründet. Rund 40 Softwareentwickler und -architekten entwickeln hier am Firmensitz innovative Lösungen für die vernetzte Geschäftswelt von heute: The Power of Integration – von der Anwendungsintegration bis zum Internet der Dinge. Auch in Sachen Lage bietet das Büro – eine umgebaute Lagerhalle in Stuttgart Vaihingen – „beste Anbindung“: Am Stadtrand, unweit des Zentrums, mit perfekter Verkehrsanbindung zum Flughafen – so sind wir immer gut erreichbar erreichen; für unsere Mitarbeiter und Kunden gleichermaßen."
+    },
+    "roadmap": {
+        "item1": "Unternehmen gestartet",
+        "item2": "+ 25 zufriedene Kunden",
+        "item3": "Anerkennungspreis"
+      }
   }
 }

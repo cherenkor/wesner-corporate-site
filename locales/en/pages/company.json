@@ -10,6 +10,15 @@
       "bizTalk": "Point-to-point integration with Azure and BizTalk.",
       "dotNet": "Seamlessly integrated individual software based on .Net.",
       "azure": "Seamlessly integrated machine learning based on Azure ML."
+    },
+    "owner": {
+      "title": "Story from Owner",
+      "description": "QUIBIQ was founded in Stuttgart in 2000. Around 40 software developers and architects are developing innovative solutions for today's networked business world here at the company's headquarters:  The Power of Integration - from application integration to the Internet of Things. The office - a converted warehouse in Stuttgart Vaihingen - also offers \"best connections\" in terms of location: On the outskirts of the city, not far from the center, with perfect transport connections to the airport - so we are always easy to reach; for our employees and customers alike."
+    },
+    "roadmap": {
+      "item1": "Company Launched",
+      "item2": "+ 25 Happy Customers",
+      "item3": "Recognition Awward"
     }
   }
 }
