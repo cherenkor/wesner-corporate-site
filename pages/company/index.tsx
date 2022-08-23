@@ -10,7 +10,7 @@ import Team, { ITeamMember } from 'components/features/company/team';
 import { server } from 'models/configs';
 
 interface ICompanyPage {
-    team: ITeamMember[];
+  team: ITeamMember[];
 }
 
 const Company: NextPage<ICompanyPage> = ({ team }) => {
