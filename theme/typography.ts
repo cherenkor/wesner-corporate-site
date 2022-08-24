@@ -11,6 +11,7 @@ export const typography = {
     fontWeight: 700,
     letterSpacing: 0,
     fontFamily: HEADING_FONT,
+    wordBreak: 'break-word',
   },
   h2: {
     fontSize: pxToRem(48),
@@ -18,12 +19,14 @@ export const typography = {
     fontWeight: 700,
     letterSpacing: '-1.05px',
     fontFamily: HEADING_FONT,
+    wordBreak: 'break-word',
   },
   h3: {
     fontSize: pxToRem(40),
     lineHeight: 48 / 40,
     fontWeight: 700,
     fontFamily: HEADING_FONT,
+    wordBreak: 'break-word',
   },
   h4: {
     fontSize: pxToRem(28),
@@ -31,18 +34,21 @@ export const typography = {
     fontWeight: 700,
     letterSpacing: '-0.63px',
     fontFamily: HEADING_FONT,
+    wordBreak: 'break-word',
   },
   h5: {
     fontSize: pxToRem(18),
     lineHeight: 24 / 18,
     fontWeight: 700,
     fontFamily: HEADING_FONT,
+    wordBreak: 'break-word',
   },
   h6: {
     fontSize: pxToRem(16),
     lineHeight: 24 / 16,
     fontWeight: 700,
     fontFamily: HEADING_FONT,
+    wordBreak: 'break-word',
   },
   subtitle1: {
     fontSize: pxToRem(20),
