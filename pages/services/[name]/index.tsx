@@ -4,18 +4,25 @@ import { ReactElement } from 'react';
 import ContactUs from 'components/shared/contact-us/contact-us';
 import {
   getResidualServices,
-  getServesesPaths,
+  getServicesPaths,
+  getSingleService,
 } from 'data-utils/services';
-import { IResidualService } from 'models/interfaces/services/service.interface';
+import {
+  IResidualService,
+  IServiceFull,
+} from 'models/interfaces/services/service.interface';
 import OtherServices from 'components/features/services/other-services';
+import ServiceBanner from 'components/features/services/service-banner';
 
 interface IServicePage {
   services: IResidualService[];
+  service: IServiceFull;
 }
 
-const Service: NextPage<IServicePage> = ({ services }) => {
+const Service: NextPage<IServicePage> = ({ services, service }) => {
   return (
     <>
+      <ServiceBanner service={service} />
       <OtherServices services={services} />
       <ContactUs />
     </>
@@ -36,6 +43,7 @@ export function getStaticProps({
   return {
     props: {
       services: getResidualServices(locale, params.name),
+      service: getSingleService(locale, params.name),
       messages: {
         ...require(`/locales/${locale}/shared.json`),
         ...require(`/locales/${locale}/pages/services.json`),
@@ -45,7 +53,7 @@ export function getStaticProps({
 }
 
 export const getStaticPaths = () => {
-  const services = getServesesPaths();
+  const services = getServicesPaths();
 
   const paths = services.map((path: string) => ({ params: { name: path } }));
 

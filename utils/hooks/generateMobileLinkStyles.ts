@@ -1,4 +1,4 @@
-import { useTheme } from "@mui/material";
+import { useTheme } from '@mui/material';
 
 export const useGenerateMobileLinkStyles = () => {
   const theme = useTheme();
