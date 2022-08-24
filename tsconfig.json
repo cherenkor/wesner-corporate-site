@@ -22,7 +22,7 @@
       "@types/*": ["types/*"],
       "@styles/*": ["styles/*"],
       "@providers/*": ["providers/*"],
-      "@locales/*": ["locales/*"]
+      "@locales/*": ["locales/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

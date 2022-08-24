@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { BaseLayout } from '@components/layouts/base-layout';
 import { ReactElement } from 'react';
 import ContactUs from 'components/shared/contact-us/contact-us';
@@ -33,32 +33,22 @@ Service.getLayout = function getLayout(page: ReactElement) {
   return <BaseLayout>{page}</BaseLayout>;
 };
 
-export function getStaticProps({
-  locale,
-  params,
-}: {
-  locale: string;
-  params: { name: string };
-}) {
+export const getStaticProps: GetStaticProps = ({ locale, params }) => {
   return {
     props: {
-      services: getResidualServices(locale, params.name),
-      service: getSingleService(locale, params.name),
+      services: getResidualServices(locale, params?.name as string),
+      service: getSingleService(locale, params?.name as string),
       messages: {
         ...require(`/locales/${locale}/shared.json`),
         ...require(`/locales/${locale}/pages/services.json`),
       },
     },
   };
-}
+};
 
-export const getStaticPaths = () => {
-  const services = getServicesPaths();
-
-  const paths = services.map((path: string) => ({ params: { name: path } }));
-
+export const getStaticPaths: GetStaticPaths = ({ locales }) => {
   return {
-    paths,
+    paths: getServicesPaths(locales),
     fallback: false,
   };
 };
