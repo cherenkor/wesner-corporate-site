@@ -6,7 +6,62 @@
     "iconUrl": "/services/enterprise.png",
     "whiteIconUrl": "/services/enterprise-white.png",
     "bannerUrl": "/services/enterprise-banner.png",
-    "description": "Angesichts der neuen Herausforderungen und Möglichkeiten zur Verbindung von Menschen, Systemen und Prozessen ist es wichtig, die richtige Integrationstechnik zu wählen."
+    "description": "Angesichts der neuen Herausforderungen und Möglichkeiten zur Verbindung von Menschen, Systemen und Prozessen ist es wichtig, die richtige Integrationstechnik zu wählen.",
+    "subtitle": "Punkt-zu-Punkt-Integration",
+    "mainTexts": [
+      {
+        "text": "Die herkömmliche Lösung für Integrationsanforderungen waren Punkt-zu-Punkt-Verbindungen zwischen den zu integrierenden Systemen."
+      },
+      {
+        "text": "Der Vorteil solcher Direktverbindungen ist, dass sie bei Bedarf einfach und schnell erstellt werden können. Ihr entscheidender Nachteil: Sie skalieren nicht. Bei Punkt-zu-Punkt-Verbindungen steigt die Komplexität des Gesamtsystems mit jeder zusätzlichen Einzelverbindung exponentiell an (Spaghetti-Integrations-Dilemma)."
+      },
+      {
+        "text": "Was also im Einzelfall eine schnelle Lösung darstellt, wird bei starkem Unternehmenswachstum als strategischer Ansatz zur Komplexitätsfalle."
+      }
+    ],
+    "features": [
+      {
+        "title": "Hub-and-Spoke-Integration",
+        "paragraphs": [
+          {
+            "text": "Mit dem Aufkommen von Integrationsservern verband sich die Hoffnung, einen Königsweg aus dem oben erwähnten Spaghetti-Integrationsdilemma zu finden: EAI – Enterprise Application Integration. Theoretisch reduziert ein EAI-Hub tatsächlich die Integrationskomplexität in einem Hub-and-Spoke-Szenario von nxm auf n Verbindungen. In der Praxis sehen wir uns jedoch häufig dabei, lieber einen Direktflug zu nehmen, als in Frankfurt (Lufthansa Drehkreuz) umzusteigen.",
+            "list": [
+              "Direktverbindungen sind immer schneller.",
+              "Zudem kann die Latenz der Abwicklung im Hub (bildlich: die Übertragung) eingespart und als mögliche Fehlerquelle eliminiert werden."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hybride Integration",
+        "paragraphs": [
+          {
+            "text": "Wie wäre es, wenn es heute möglich wäre, beide Welten miteinander zu verbinden:",
+            "list": [
+              "Die klassischen Vorteile einer strukturierten Anwendungsintegration.",
+              "Mit den modernen Möglichkeiten der leichtgewichtigen, direkten Verknüpfung von Endpunkten."
+            ]
+          },
+          {
+            "text": "Und das alles auf einer Plattform, die beide Arten der Integration beherrscht und bedarfsgerecht zur Verfügung stellt. Eine Plattform, die zu Recht Hybrid genannt wird, weil sie die unterschiedlichen Szenarien auf einer Plattform mit einheitlicher Handhabung, Überwachung, Fehlerbehandlung usw. zusammenführt."
+          }
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "imgUrl": "/services/enterprise/benefit1.png",
+        "text": "Konnektivität für die unterschiedlichsten Endpunkte"
+      },
+      {
+        "imgUrl": "/services/enterprise/benefit2.png",
+        "text": "Unterstützung für alle erforderlichen Integrationstypen"
+      },
+      {
+        "imgUrl": "/services/enterprise/benefit3.png",
+        "text": "Sie haben immer die volle Kontrolle und Transparenz"
+      }
+    ]
   },
   {
     "path": "development",
@@ -15,7 +70,56 @@
     "iconUrl": "/services/development.png",
     "whiteIconUrl": "/services/development-white.png",
     "bannerUrl": "/services/development-banner.png",
-    "description": "Bei unseren individuellen Softwareentwicklungen gibt es keine Redundanzen. Wir erhalten die notwendigen Daten zur Verarbeitung in unseren Lösungen."
+    "description": "Bei unseren individuellen Softwareentwicklungen gibt es keine Redundanzen. Wir erhalten die notwendigen Daten zur Verarbeitung in unseren Lösungen.",
+    "subtitle": "Ihre individuelle Lösung",
+    "mainTexts": [
+      {
+        "text": "Eine unternehmenskritische Anwendung ist keine Insellösung mehr. Es muss nicht nur das tun, wofür es entwickelt wurde. Außerdem muss es sich nahtlos in die Systeme und Prozesse eines Unternehmens integrieren. Durch die Vielzahl an Entwicklungs- und Integrationsprojekten hat QUIBIQ ein tiefes Verständnis für die Prozesse in großen und mittelständischen Unternehmen entwickelt."
+      },
+      {
+        "text": "Wo Standardsoftware an ihre Grenzen stößt und nahtlos integrierte, systemübergreifende Anwendungen den entscheidenden Vorteil bringen, kann QUIBIQ mit der Entwicklung Ihrer individuellen Anwendung einen großen Mehrwert für Sie generieren."
+      }
+    ],
+    "features": [
+      {
+        "title": "Hochwertige Softwareentwicklung",
+        "paragraphs": [
+          {
+            "text": "für zentrale Anwendungen mit geschäftskritischen Aufgaben und hohen Anforderungen an Performance, Massendatenverarbeitung und Prozesseffizienz."
+          }
+        ]
+      },
+      {
+        "title": "Nahtlose Verbindung",
+        "paragraphs": [
+          {
+            "text": "zu bestehenden Systemen, so dass ein echter Mehrwert entsteht."
+          }
+        ]
+      },
+      {
+        "title": "Offshoring bei Bedarf",
+        "paragraphs": [
+          {
+            "text": "Über unser assoziiertes Partnerunternehmen Nexion in Bolivien können wir für Ihre Projekte auch zusätzliche, kostengünstige .Net- und Integrationsentwicklungsressourcen in gewohnter Qualität bereitstellen."
+          }
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "imgUrl": "/services/development/benefit1.png",
+        "text": "Tiefes Verständnis von unternehmenskritischen Anwendungen"
+      },
+      {
+        "imgUrl": "/services/development/benefit2.png",
+        "text": "Basierend auf den neuesten Microsoft-Technologien"
+      },
+      {
+        "imgUrl": "/services/development/benefit3.png",
+        "text": "Nahtlos integriert"
+      }
+    ]
   },
   {
     "path": "support",
@@ -24,6 +128,34 @@
     "iconUrl": "/services/support.png",
     "whiteIconUrl": "/services/support-white.png",
     "bannerUrl": "/services/support-banner.png",
-    "description": "Wir bieten maßgeschneiderte Lösungen für Ihren Supportbedarf – alles mit einem Ziel, den reibungslosen Betrieb Ihrer BizTalk- und Azure-Integrationsanwendungen sicherzustellen."
+    "description": "Wir bieten maßgeschneiderte Lösungen für Ihren Supportbedarf – alles mit einem Ziel, den reibungslosen Betrieb Ihrer BizTalk- und Azure-Integrationsanwendungen sicherzustellen.",
+    "subtitle": "Gehen Sie mit unserer Unterstützung auf Nummer sicher",
+    "mainTexts": [
+      {
+        "text": "Die Übernahme Ihrer Integrationslösung in unseren Support bedeutet:",
+        "list": [
+          "Unsere Support-Ingenieure sind speziell für Ihre Lösung geschult und stehen Ihnen unter einer eigenen Rufnummer zur Verfügung.",
+          "Nicht von uns entwickelte Lösungen werden von uns vorab im Rahmen eines Health Checks geprüft.",
+          "Für unsere BizTalk- und Azure-Spezialisten wird eine ausführliche Dokumentation erstellt.",
+          "Im Supportfall stehen Ihnen unsere Mitarbeiter innerhalb definierter Reaktionszeiten (bis zu 15 Minuten) zur Verfügung, greifen bei Bedarf remote auf Ihre Lösung zu und unterstützen Sie kompetent bei der Fehlerbehebung; bei Bedarf auch vor Ort.",
+          "Nach Vereinbarung garantieren wir auch die Wiederherstellungszeiten Ihrer Lösung.",
+          "Gerne übernehmen wir alle notwendigen Managed Tasks für den Betrieb Ihrer Lösung und halten diese stets auf dem neusten Stand der Technik."
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "imgUrl": "/services/support/benefit1.png",
+        "text": "Definierte Service Levels nach Ihren Bedürfnissen"
+      },
+      {
+        "imgUrl": "/services/support/benefit2.png",
+        "text": "Managed Services bis zum kompletten Betrieb"
+      },
+      {
+        "imgUrl": "/services/support/benefit3.png",
+        "text": "Engagiertes Support-Team"
+      }
+    ]
   }
 ]

@@ -6,7 +6,62 @@
     "iconUrl": "/services/enterprise.png",
     "whiteIconUrl": "/services/enterprise-white.png",
     "bannerUrl": "/services/enterprise-banner.png",
-    "description": "With the  new challenges and opportunities for connecting people, systems and processes it is important to choose right integration techniq."
+    "description": "With the  new challenges and opportunities for connecting people, systems and processes it is important to choose right integration techniq.",
+    "subtitle": "Point-to-point Integration",
+    "mainTexts": [
+      {
+        "text": "The traditional solution to integration requirements has been point-to-point connections between the systems to be integrated."
+      },
+      {
+        "text": "The advantage  of such direct connections is that they can be created easily and quickly if necessary. Their decisive disadvantage : they do not scale. With point-to-point connections, the complexity of the overall system increases exponentially with each additional individual connection (spaghetti integration dilemma)."
+      },
+      {
+        "text": "What therefore represents a quick solution in individual cases becomes a complexity trap as a strategic approach in the event of strong company growth."
+      }
+    ],
+    "features": [
+      {
+        "title": "Hub and Spoke Integration",
+        "paragraphs": [
+          {
+            "text": "With the emergence of integration servers, the hope was linked to find a silver bullet out of the spaghetti integration dilemma mentioned above: EAI - Enterprise Application Integration. In theory, an EAI hub actually reduces the integration complexity in a hub-and-spoke scenario from nxm to n connections. In practice, however, we often find ourselves preferring to take a direct flight rather than changing planes in Frankfurt (the Lufthansa hub).",
+            "list": [
+              "Direct connections are always faster.",
+              "In addition, the latency of the handling in the hub (figuratively: the transfer) can be saved and eliminated as a possible source of error."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hybrid Integration",
+        "paragraphs": [
+          {
+            "text": "How would it be if it were possible today to connect both worlds with each other:",
+            "list": [
+              "The classic benefits of structured application integration.",
+              "With the modern possibilities of lightweight, direct linking of endpoints."
+            ]
+          },
+          {
+            "text": "And all this on a platform that masters both types of integration and makes them available as required. A platform that is rightly called hybrid because it brings together the different scenarios on one platform with uniform handling, monitoring, error handling, etc."
+          }
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "imgUrl": "/services/enterprise/benefit1.png",
+        "text": "Connectivity for the most diverse endpoints"
+      },
+      {
+        "imgUrl": "/services/enterprise/benefit2.png",
+        "text": "Support for all required integration types"
+      },
+      {
+        "imgUrl": "/services/enterprise/benefit3.png",
+        "text": "You always have full control and transparency"
+      }
+    ]
   },
   {
     "path": "development",
@@ -15,7 +70,56 @@
     "iconUrl": "/services/development.png",
     "whiteIconUrl": "/services/development-white.png",
     "bannerUrl": "/services/development-banner.png",
-    "description": "There are no redundancies in our individual software developments. We get the necessary data for processing in our solutions."
+    "description": "There are no redundancies in our individual software developments. We get the necessary data for processing in our solutions.",
+    "subtitle": "Your Individual Solution",
+    "mainTexts": [
+      {
+        "text": "A mission-critical application is no longer an isolated solution. It not only has to do what it was designed for. It must also be seamlessly integrated into a company's systems and processes. Through the large number of development and integration projects, QUIBIQ has developed a  deep understanding of the processes in large and medium-sized companies."
+      },
+      {
+        "text": "Where standard software reaches its limits and  seamlessly integrated, cross-system applications bring the decisive advantage , QUIBIQ can generate great added value for you with the development of your individual application."
+      }
+    ],
+    "features": [
+      {
+        "title": "High-Quality Software Development",
+        "paragraphs": [
+          {
+            "text": "for central applications with business-critical tasks and high demands on performance, mass data processing and process efficiency."
+          }
+        ]
+      },
+      {
+        "title": "Seamless connection",
+        "paragraphs": [
+          {
+            "text": "to existing systems, so that there is really added value."
+          }
+        ]
+      },
+      {
+        "title": "Offshoring if required",
+        "paragraphs": [
+          {
+            "text": "Via our associated partner company Nexion in Bolivia, we can also provide additional, cost-effective .Net and integration development resources in the quality we have come to expect for your projects."
+          }
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "imgUrl": "/services/development/benefit1.png",
+        "text": "Deep understanding of mission-critical applications"
+      },
+      {
+        "imgUrl": "/services/development/benefit2.png",
+        "text": "Based on the latest Microsoft technologies"
+      },
+      {
+        "imgUrl": "/services/development/benefit3.png",
+        "text": "Seamlessly integrated"
+      }
+    ]
   },
   {
     "path": "support",
@@ -24,6 +128,34 @@
     "iconUrl": "/services/support.png",
     "whiteIconUrl": "/services/support-white.png",
     "bannerUrl": "/services/support-banner.png",
-    "description": "We offer tailor-made solutions for your support needs - all with one goal, to ensure the smooth operation of your BizTalk and Azure integration applications."
+    "description": "We offer tailor-made solutions for your support needs - all with one goal, to ensure the smooth operation of your BizTalk and Azure integration applications.",
+    "subtitle": "Play it safe with our support",
+    "mainTexts": [
+      {
+        "text": "Taking over your integration solution in our support means:",
+        "list": [
+          "Our support engineers are  specially trained for your solution  and are available to you on a dedicated number.",
+          "Solutions not developed by us are audited by us in advance as part of a  health check.",
+          "Detailed documentation is created for our BizTalk and Azure specialists.",
+          "In the event of support, our employees are available to you  within defined response times (up to 15 minutes) , access your solution remotely if necessary and provide you with competent support in troubleshooting; if necessary also on site.",
+          "By agreement, we also  guarantee the recovery times of your solution.",
+          "We are happy to carry out all the necessary managed tasks for the operation of your solution and always keep it up to date with the latest technology."
+        ]
+      }
+    ],
+    "benefits": [
+      {
+        "imgUrl": "/services/support/benefit1.png",
+        "text": "Defined service levels according to your needs"
+      },
+      {
+        "imgUrl": "/services/support/benefit2.png",
+        "text": "Managed services up to complete operation"
+      },
+      {
+        "imgUrl": "/services/support/benefit3.png",
+        "text": "Dedicated support team"
+      }
+    ]
   }
 ]

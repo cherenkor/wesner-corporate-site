@@ -1,3 +1,17 @@
+export interface IServiceFeatureParagraph {
+  text: string;
+  list?: string[];
+}
+
+export interface IServiceBenefit {
+  imgUrl: string;
+  text: string;
+}
+
+export interface IServiceFeature {
+  title: string;
+  paragraphs: IServiceFeatureParagraph[];
+}
 
 export interface IService {
   path: string;
@@ -11,6 +25,10 @@ export interface IResidualService extends IService {
 }
 
 export interface IServiceFull extends IResidualService {
-    bannerUrl: string;
-    description: string;
+  bannerUrl: string;
+  description: string;
+  subtitle: string;
+  mainTexts: IServiceFeatureParagraph[];
+  features: IServiceFeature[];
+  benefits: IServiceBenefit[];
 }

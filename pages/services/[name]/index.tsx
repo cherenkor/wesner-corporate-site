@@ -13,6 +13,7 @@ import {
 } from 'models/interfaces/services/service.interface';
 import OtherServices from 'components/features/services/other-services';
 import ServiceBanner from 'components/features/services/service-banner';
+import Features from 'components/features/services/features';
 
 interface IServicePage {
   services: IResidualService[];
@@ -23,6 +24,7 @@ const Service: NextPage<IServicePage> = ({ services, service }) => {
   return (
     <>
       <ServiceBanner service={service} />
+      <Features service={service} />
       <OtherServices services={services} />
       <ContactUs />
     </>
