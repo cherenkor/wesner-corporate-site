@@ -20,6 +20,7 @@ export default function Features({ service }: IProps): JSX.Element {
         <Typography
           mb={{ xs: 1, md: 2 }}
           variant={getResponsiveFont({ medium: 'h4', large: 'h3' })}
+          maxWidth={2 / 3}
         >
           {subtitle}
         </Typography>
