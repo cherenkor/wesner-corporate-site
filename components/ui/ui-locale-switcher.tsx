@@ -6,13 +6,13 @@ import { localesConfig } from 'models/configs/locales.config';
 import Image from 'next/image';
 
 export const LocaleSwitcher = () => {
-  const { route, locale } = useRouter();
+  const { route, locale, asPath } = useRouter();
   const theme = useTheme();
 
   return (
     <Stack direction="row" gap={2}>
       {localesConfig.map(({ name, img }) => (
-        <NextLink key={name} href={route} locale={name}>
+        <NextLink key={name} href={route} locale={name} as={asPath}>
           <Link
             component="button"
             sx={{

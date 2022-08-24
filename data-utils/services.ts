@@ -1,8 +1,9 @@
-import { IServiceFull } from './../models/interfaces/services/service.interface';
+import { IServiceFull } from 'models/interfaces/services/service.interface';
 import {
   IResidualService,
   IService,
 } from 'models/interfaces/services/service.interface';
+import { TLocales } from '../types/locales';
 
 export const getServicesShortInfo = (locale: string): IService[] => {
   const services = require(`/data/services/services.${locale}.json`);
@@ -37,8 +38,16 @@ export const getResidualServices = (
     }));
 };
 
-export const getServicesPaths = () => {
-  const services = require(`/data/services/services.en.json`);
+export const getServicesPaths = (locales: TLocales) => {
+  const translates = locales.flatMap((locale) => ({
+    locale,
+    data: require(`/data/services/services.${locale}.json`) as IService[],
+  }));
 
-  return services.map((item: IService) => item.path);
+  return translates.flatMap(({ data, locale }) =>
+    data.map((item) => ({
+      params: { name: item.path },
+      locale,
+    })),
+  );
 };

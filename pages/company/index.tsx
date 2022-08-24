@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import { BaseLayout } from '@components/layouts/base-layout';
 import { ReactElement } from 'react';
 import ContactUs from 'components/shared/contact-us/contact-us';
@@ -29,7 +29,7 @@ Company.getLayout = function getLayout(page: ReactElement) {
   return <BaseLayout>{page}</BaseLayout>;
 };
 
-export const getStaticProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps: GetStaticProps = ({ locale }) => {
   return {
     props: {
       team: require(`/data/company/employees.${locale}.json`),
