@@ -4,22 +4,17 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import { useGetResponsiveFontVariants } from 'utils/hooks/responsiveFontVariant.util';
 import EastIcon from '@mui/icons-material/East';
+import { IResidualService } from 'models/interfaces/services/service.interface';
 
 interface IServiceItem {
-  title: string;
-  description: string;
-  img: string;
-  path: string;
+  item: IResidualService;
 }
 
-export default function ServiceItem({
-  title,
-  description,
-  img,
-  path,
-}: IServiceItem): JSX.Element {
+export default function ServiceItem({ item }: IServiceItem): JSX.Element {
   const theme = useTheme();
   const getFontVariants = useGetResponsiveFontVariants();
+
+  const { path, name, shortDescription, whiteIconUrl } = item;
 
   return (
     <NextLink href={`${ERoutes.Services}/${path}`} passHref>
@@ -37,30 +32,34 @@ export default function ServiceItem({
         <Card
           sx={{
             position: 'relative',
-            pt: { xs: 3, md: 5 },
-            pb: { xs: 6, md: 8 },
+            pt: { xs: 2, md: 3 },
+            pb: { xs: 5, md: 6 },
+            bgcolor: 'grey.100',
             height: 1,
           }}
         >
           <CardContent>
-            <Image src={img} alt="" width={80} height={80} />
+            <Image src={whiteIconUrl || ''} alt="" width={80} height={80} />
             <Typography
               variant={getFontVariants({ medium: 'h5', large: 'h4' })}
-              mt={{ xs: 1, md: 3, lg: 5 }}
+              color="grey.300"
+              mt={{ xs: 2, md: 3 }}
             >
-              {title}
+              {name}
             </Typography>
             <Typography
               variant={getFontVariants({ medium: 'body2', large: 'body1' })}
+              color="grey.300"
               mt={1}
             >
-              {description}
+              {shortDescription}
             </Typography>
             <EastIcon
               sx={{
                 position: 'absolute',
-                bottom: { xs: 16, md: 28 },
+                bottom: { xs: 8, md: 16 },
                 right: { xs: 16, md: 24 },
+                color: 'grey.300',
               }}
             />
           </CardContent>

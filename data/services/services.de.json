@@ -1,0 +1,23 @@
+[
+  {
+    "path": "enterprise",
+    "name": "Unternehmensintegration",
+    "shortDescription": "Punkt-zu-Punkt-Verbindungen zwischen den zu integrierenden Systemen.",
+    "iconUrl": "/services/enterprise.png",
+    "whiteIconUrl": "/services/enterprise-white.png"
+  },
+  {
+    "path": "development",
+    "name": "Kundenspezifische Entwicklung",
+    "shortDescription": "Individuelle maßgeschneiderte Softwarelösungen, die sich nahtlos integrieren.",
+    "iconUrl": "/services/development.png",
+    "whiteIconUrl": "/services/development-white.png"
+  },
+  {
+    "path": "support",
+    "name": "Support-Services",
+    "shortDescription": "Betriebsaufgaben und halten Sie es immer auf dem neusten Stand der Technik.",
+    "iconUrl": "/services/support.png",
+    "whiteIconUrl": "/services/support-white.png"
+  }
+]

@@ -5,11 +5,14 @@ import Typography from '@mui/material/Typography';
 import { useTranslations } from 'next-intl';
 import { useGetResponsiveFontVariants } from 'utils/hooks/responsiveFontVariant.util';
 import ServiceItem from 'components/features/home/service-item';
-import { useGetServicesConfig } from 'models/configs/home/services.config';
+import { IService } from 'models/interfaces/services/service.interface';
 
-export default function ServicesSection(): JSX.Element {
+export default function ServicesSection({
+  services,
+}: {
+  services: IService[];
+}): JSX.Element {
   const t = useTranslations('services');
-  const services = useGetServicesConfig();
 
   const getTitleVeriants = useGetResponsiveFontVariants();
 
@@ -29,12 +32,13 @@ export default function ServicesSection(): JSX.Element {
             gap: 3,
           }}
         >
-          {services.map(({ title, description, img }) => (
+          {services.map(({ name, shortDescription, iconUrl, path }) => (
             <ServiceItem
-              key={title}
-              description={description}
-              img={img}
-              title={title}
+              key={name}
+              description={shortDescription}
+              img={iconUrl || ''}
+              title={name}
+              path={path}
             />
           ))}
         </Stack>

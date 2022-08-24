@@ -27,19 +27,7 @@
     "projects": "Projekte abgeschlossen"
   },
   "services": {
-    "title": "Unsere Leistungen",
-    "enterprise": {
-      "title": "Unternehmensintegration",
-      "description": "Punkt-zu-Punkt-Verbindungen zwischen den zu integrierenden Systemen."
-    },
-    "development": {
-      "title": "Kundenspezifische Entwicklung",
-      "description": "Individuelle maßgeschneiderte Softwarelösungen, die sich nahtlos integrieren."
-    },
-    "support": {
-      "title": "Support-Services",
-      "description": "Betriebsaufgaben und halten Sie es immer auf dem neusten Stand der Technik."
-    }
+    "title": "Unsere Leistungen"
   },
   "banner": {
     "title": "Integrationskraft für Ihr Unternehmen",

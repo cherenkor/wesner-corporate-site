@@ -30,7 +30,6 @@ Company.getLayout = function getLayout(page: ReactElement) {
 };
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
-
   return {
     props: {
       team: require(`/data/company/employees.${locale}.json`),

@@ -14,7 +14,7 @@ export default function NavigationMenuItem({
   sx,
 }: INavMenuItem): JSX.Element {
   const router = useRouter();
-  const isActive = router.pathname.includes(item.path);
+
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -42,16 +42,19 @@ export default function NavigationMenuItem({
           horizontal: 'left',
         }}
       >
-        {(children || []).map(({ name, path }) => (
-          <NextLink key={name} href={path}>
-            <MenuItem
-              sx={{ color: isActive ? 'primary.main' : 'grey.800' }}
-              onClick={handleClose}
-            >
-              {name}
-            </MenuItem>
-          </NextLink>
-        ))}
+        {(children || []).map(({ name, path }) => {
+          const isActive = router.asPath.includes(path);
+          return (
+            <NextLink key={name} href={path}>
+              <MenuItem
+                sx={{ color: isActive ? 'primary.main' : 'grey.800' }}
+                onClick={handleClose}
+              >
+                {name}
+              </MenuItem>
+            </NextLink>
+          );
+        })}
       </Menu>
     </>
   );

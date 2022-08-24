@@ -6,12 +6,18 @@ import AproachSection from 'components/features/home/aproach-section';
 import WhyWeSection from 'components/features/home/why-we-section';
 import ServicesSection from 'components/features/home/services-section';
 import Banner from 'components/features/home/banner';
+import { getServicesShortInfo } from 'data-utils/services';
+import { IService } from 'models/interfaces/services/service.interface';
 
-const Home: NextPage = () => {
+interface IHomePage {
+  services: IService[];
+}
+
+const Home: NextPage<IHomePage> = ({ services }) => {
   return (
     <>
       <Banner />
-      <ServicesSection />
+      <ServicesSection services={services} />
       <WhyWeSection />
       <AproachSection />
       <ContactUs />
@@ -26,6 +32,7 @@ Home.getLayout = function getLayout(page: ReactElement) {
 export function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
+      services: getServicesShortInfo(locale),
       messages: {
         ...require(`/locales/${locale}/shared.json`),
         ...require(`/locales/${locale}/pages/home.json`),

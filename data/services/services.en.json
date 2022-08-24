@@ -1,0 +1,23 @@
+[
+  {
+    "path": "enterprise",
+    "name": "Enterprise Integration",
+    "shortDescription": "Point-to-point connections between the systems to be integrated.",
+    "iconUrl": "/services/enterprise.png",
+    "whiteIconUrl": "/services/enterprise-white.png"
+  },
+  {
+    "path": "development",
+    "name": "Custom Development",
+    "shortDescription": "Individual tailor-made software solutions that integrate seamlessly.",
+    "iconUrl": "/services/development.png",
+    "whiteIconUrl": "/services/development-white.png"
+  },
+  {
+    "path": "support",
+    "name": "Support Services",
+    "shortDescription": "Operation tasks and always keep it up to date with the latest technology.",
+    "iconUrl": "/services/support.png",
+    "whiteIconUrl": "/services/support-white.png"
+  }
+]
