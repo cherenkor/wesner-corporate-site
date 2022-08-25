@@ -16,7 +16,7 @@ export default function Owner(): JSX.Element {
       width={1}
       pr={{ xs: 3, md: 13.5, lg: 'calc((100vw - 1200px) / 2 + 36px)' }}
       pl={{ xs: 3, md: 0 }}
-      pb={{ xs: 0, sm: 10, lg: 17 }}
+      pb={{ xs: 0, md: 10, lg: 17 }}
     >
       <Stack direction={{ xs: 'column', md: 'row' }} gap={6}>
         <Box

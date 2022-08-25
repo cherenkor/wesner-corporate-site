@@ -18,7 +18,7 @@ export default function Team({ team }: { team: ITeamMember[] }): JSX.Element {
   const getFontVariants = useGetResponsiveFontVariants();
 
   return (
-    <Box py={{ xs: 8, md: 10, lg: 17 }}>
+    <Box py={{ xs: 5, md: 10, lg: 17 }}>
       <Container fixed>
         <Typography
           variant={getFontVariants({ small: 'h4', medium: 'h3', large: 'h2' })}

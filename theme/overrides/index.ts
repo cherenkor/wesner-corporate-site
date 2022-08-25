@@ -5,5 +5,10 @@ import Container from './Container';
 import Menu from './Menu';
 
 export function overrides(theme: Theme) {
-  return Object.assign(Button(theme), Card(theme), Container(theme), Menu(theme));
+  return Object.assign(
+    Button(theme),
+    Card(theme),
+    Container(theme),
+    Menu(theme),
+  );
 }
