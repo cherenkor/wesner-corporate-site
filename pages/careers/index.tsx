@@ -3,13 +3,15 @@ import { BaseLayout } from '@components/layouts/base-layout';
 import { ReactElement } from 'react';
 import ContactUs from 'components/shared/contact-us/contact-us';
 import BannerSection from 'components/features/careers/banner-section';
-import Benefits from '@components/features/careers/benefits';
+import Benefits from 'components/features/careers/benefits';
+import WhyJoin from 'components/features/careers/why-join';
 
 const Careers: NextPage = () => {
   return (
     <>
       <BannerSection />
       <Benefits />
+      <WhyJoin />
       <ContactUs />
     </>
   );

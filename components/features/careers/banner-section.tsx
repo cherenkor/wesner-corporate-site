@@ -51,7 +51,7 @@ export default function BannerSection(): JSX.Element {
         </Stack>
       </Container>
       <Box position="relative" width={1} sx={{ aspectRatio: '90/29' }}>
-        <Image src={Banner} alt="" layout="fill" />
+        <Image src={Banner} alt="" layout="fill" priority />
       </Box>
     </Box>
   );
