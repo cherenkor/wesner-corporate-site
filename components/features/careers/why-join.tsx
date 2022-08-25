@@ -14,7 +14,7 @@ export default function WhyJoin(): JSX.Element {
   const bodyVariant = getResponsiveFont({ medium: 'body2', large: 'body1' });
 
   return (
-    <Box component="section">
+    <Box component="section" pb={{ xs: 5, md: 10, lg: 17 }}>
       <Stack
         pl={{ xs: 3, md: 13.5, lg: 'calc((100vw - 1200px) / 2 + 36px)' }}
         direction={{ xs: 'column-reverse', lg: 'row' }}

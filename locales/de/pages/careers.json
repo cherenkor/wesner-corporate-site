@@ -5,11 +5,12 @@
     "btnText": "Begleiten Sie uns",
     "benefitsTitle": "Unsere Vorteile",
     "whyJoin": {
-        "title": "Warum Sie mitmachen sollten",
-        "description": "Wir freuen uns daher auf Softwareentwickler und -architekten, die Spaß daran haben, mit uns Menschen, Systeme und Prozesse auf innovative Art und Weise unter Nutzung neuester softwaretechnischer Möglichkeiten zu verbinden. Mit Leidenschaft und Kreativität entwickeln wir innovative Lösungen für die digitale Transformation unserer Kunden.",
-        "example": "Zum Beispiel:",
-        "listitem1": "50 Millionen Fluggäste reisen papierlos.",
-        "listitem2": "Bagger melden sich automatisch von der Baustelle, wenn sie einen Servicetechniker benötigen."
-      }
+      "title": "Warum Sie mitmachen sollten",
+      "description": "Wir freuen uns daher auf Softwareentwickler und -architekten, die Spaß daran haben, mit uns Menschen, Systeme und Prozesse auf innovative Art und Weise unter Nutzung neuester softwaretechnischer Möglichkeiten zu verbinden. Mit Leidenschaft und Kreativität entwickeln wir innovative Lösungen für die digitale Transformation unserer Kunden.",
+      "example": "Zum Beispiel:",
+      "listitem1": "50 Millionen Fluggäste reisen papierlos.",
+      "listitem2": "Bagger melden sich automatisch von der Baustelle, wenn sie einen Servicetechniker benötigen."
+    },
+    "positionsTitle": "Offene Positionen"
   }
 }
