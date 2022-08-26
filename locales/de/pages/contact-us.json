@@ -1,0 +1,15 @@
+{
+    "contactUsPage": {
+        "title": "Wir würden uns freuen, mit Ihnen in Kontakt zu treten",
+        "description": "Lassen Sie uns Ihre Produktziele besprechen und wie wir Ihnen helfen können, sie zu erreichen.",
+        "nameLabel": "Ihren Namen",
+        "emailLabel": "Email",
+        "companyLabel": "Gesellschaft",
+        "textareaLabel": "Wie können wir Ihnen helfen?",
+        "thankYou": {
+            "title": "Danke!",
+            "description": "Wir kommen bald auf Sie zurück. In der Zwischenzeit können Sie unsere Fallstudien überprüfen.",
+            "btnText": "Gehen Sie zu Fallstudien"
+        }
+    }
+}

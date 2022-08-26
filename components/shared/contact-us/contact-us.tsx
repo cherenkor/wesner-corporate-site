@@ -4,7 +4,9 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { ERoutes } from 'models/enums/routes.enum';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function ContactUs(): JSX.Element {
   const t = useTranslations();
@@ -34,7 +36,9 @@ export default function ContactUs(): JSX.Element {
               {t('contactUs.description')}
             </Typography>
           </Stack>
-          <Button color="secondary">{t('contactUs.button')}</Button>
+          <Link href={ERoutes.ContactUs}>
+            <Button color="secondary">{t('contactUs.button')}</Button>
+          </Link>
         </Stack>
       </Container>
     </Box>

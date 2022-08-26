@@ -1,7 +1,7 @@
 export interface IPositionSection {
-    title?: string;
-    text?: string;
-    list?: string[];
+  title?: string;
+  text?: string;
+  list?: string[];
 }
 
 export interface IPosition {
@@ -11,8 +11,8 @@ export interface IPosition {
 }
 
 export interface IPositionFull extends IPosition {
-    alocation?: string;
-    role?: string;
-    generalInfo?: IPositionSection;
-    otherInfo?: IPositionSection[];
+  alocation?: string;
+  role?: string;
+  generalInfo?: IPositionSection;
+  otherInfo?: IPositionSection[];
 }
