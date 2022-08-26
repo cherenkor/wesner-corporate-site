@@ -2,7 +2,49 @@
   {
     "id": "1",
     "title": "Senior-Entwickler für Anwendungsintegration",
-    "location": "Deutschland | Bremen"
+    "location": "Deutschland | Bremen",
+    "alocation": "Full-Time",
+    "role": "Engineer",
+    "generalInfo": {
+      "title": "Wir suchen einen Senior Application Integration Developer (w/m/d)",
+      "text": "Können Sie die Integrationslandschaft von morgen erfolgreich gestalten und aufbauen? Dies ist Ihre Gelegenheit, Mitglied unseres Technology Consulting Teams zu werden. Wenn Sie eine Leidenschaft für Technologie haben und die Welt grüner machen möchten, können Sie in unserem vielfältigen Team ein Changemaker werden!"
+    },
+    "otherInfo": [
+      {
+        "title": "Ihre Aufgaben",
+        "list": [
+          "Sie analysieren und entwerfen Integrationsszenarien für verschiedene Use Cases.",
+          "Sie konzipieren und entwickeln komplexe Integrationsszenarien und integrieren Systeme und Services mit unserem Portfolio an Integrationslösungen (Schwerpunkt Microsoft).",
+          "Sie werden den Entwicklungsprozess kontinuierlich evaluieren und verbessern.",
+          "Sie überprüfen und analysieren Lösungsdesigns und -entwicklungen, um sicherzustellen, dass Standards erfüllt werden und das Design-Integrationsszenario in die gesamte Integrationsarchitektur passt.",
+          "Sie arbeiten mit verschiedenen Stakeholdern innerhalb und außerhalb von Feature-Teams und Projekten zusammen und erstellen hochmoderne Integrationsszenarien.",
+          "Sie werden Ihre Erfahrung und Ihr Wissen über den gesamten Lebenszyklus hinweg einsetzen, Teams schulen und Ihr Wissen für ein besseres Miteinander teilen."
+        ]
+      },
+      {
+        "title": "Dein Profil",
+        "list": [
+          "Sie verfügen über mehrjährige ausgewiesene Erfahrung im Bereich Enterprise Integration.",
+          "Sie verfügen über ausgewiesene Kenntnisse in Technologien (z. B. C#, JSON, XML, REST / SOAP) und Integrationslösungen (z. B. API, ETL, ESB).",
+          "Sie verfügen über ausgewiesene Erfahrung und Kenntnisse zu Microsoft Integration Tools.",
+          "Sie haben nachweisliche Erfahrung mit agiler Methodik sowie Design Thinking mit der Fähigkeit, Anforderungen von Endbenutzern zu sammeln und zu sammeln und sie in ein Design/einen Code zu übersetzen.",
+          "Sie sind ein Teamplayer kombiniert mit einer proaktiven Einstellung.",
+          "Du verfügst über ausgezeichnete Deutsch- und Englischkenntnisse (Wort & Schrift); zusätzliche EU-Sprachen sind von Vorteil."
+        ]
+      },
+      {
+        "title": "Vorteile",
+        "list": [
+          "Betriebliche Altersvorsorge und Betriebsversicherungen weltweit.",
+          "Exklusive Mitarbeiterrabatte und subventionierte Kantine.",
+          "38h Arbeitswoche und 30 Urlaubstage.",
+          "Home Office Option in Absprache mit dem Team.",
+          "Elternzeit für Mütter und Väter ist ganz normal.",
+          "Zusatzleistungen für Menschen mit Behinderung.",
+          "Sehr gutes Arbeitsklima (familiäres „du“, umgangssprachliche Atmosphäre, sehr internationale Teams)."
+        ]
+      }
+    ]
   },
   {
     "id": "2",

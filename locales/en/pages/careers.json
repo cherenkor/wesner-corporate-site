@@ -11,6 +11,8 @@
       "listitem1": "50 million flight passengers go paperless.",
       "listitem2": "Excavators report automatically from the construction site when they need a service technician."
     },
-    "positionsTitle": "Open Positions"
+    "positionsTitle": "Open Positions",
+    "backBtnText": "BACK TO JOBS LIST",
+    "helperText": "For further information please contact Alexander Wesner"
   }
 }

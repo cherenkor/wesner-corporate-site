@@ -2,16 +2,62 @@
   {
     "id": "1",
     "title": "Senior Application Integration Developer",
-    "location": "Germany | Bremen"
+    "location": "Germany | Bremen",
+    "alocation": "Full-Time",
+    "role": "Engineer",
+    "generalInfo": {
+      "title": "We are looking for a Senior Application Integration Developer (f/m/d)",
+      "text": "Can you successfully design and build the integration landscape of tomorrow? This is your opportunity to become a member of our Technology Consulting Team. If you have a passion for technology and want to make the world a greener place, you can become a changemaker in our diverse team!"
+    },
+    "otherInfo": [
+      {
+        "title": "Your Tasks",
+        "list": [
+          "You will analyze and design integration scenarios for various Use Cases.",
+          "You will design and develop complex integration scenarios and integrate systems and services using our portfolio of integration solutions (focusing on Microsoft).",
+          "You will continuously evaluate and improve the development process.",
+          "You will review and analyze solution designs and development to ensure that standards are met and the design integration scenario fits into the overall integration architecture.",
+          "You will work with various stakeholders in and out of feature teams and projects, building state of the art integration scenarios.",
+          "You will use your Experience and knowledge across the entire Lifecycle, train teams and share your knowledge for a better together."
+        ]
+      },
+      {
+        "title": "Your Profile",
+        "list": [
+          "You have several years of proven experience within the area of enterprise integration.",
+          "You have proven knowledge of technologies (e.g., C#, JSON, XML, REST / SOAP) and integration solutions (e.g., API, ETL, ESB).",
+          "You have proven experience and knowledge on Microsoft Integration Tools.",
+          "You have proven experience of Agile methodology, as well as design thinking with the ability to gather and collect requirements from end-users and translate them into a design/code.",
+          "You are a team player combined with a proactive attitude.",
+          "You have excellent German and English communication skills (written & spoken); additional EU languages will be a plus."
+        ]
+      },
+      {
+        "title": "Benefits",
+        "list": [
+          "Company pension scheme and company insurance worldwide.",
+          "Exclusive employee discounts and subsidized canteen.",
+          "38h working week and 30 leave days.",
+          "Home Office Option in consultation with the team.",
+          "Parental leave for mothers and fathers is perfectly normal.",
+          "Additional benefits for people with a disability.",
+          "Very good working atmosphere (informal \"du\", colloquial atmosphere, very international teams)."
+        ]
+      }
+    ]
   },
   {
     "id": "2",
     "title": ".Net Developer",
-    "location": "Germany | Bremen"
+    "location": "Germany | Bremen",
+    "alocation": "Full-Time",
+    "role": "Engineer"
   },
   {
     "id": "3",
     "title": "Delivery Manager",
-    "location": "Germany | Bremen"
+    "location": "Germany | Bremen",
+    "alocation": "Full-Time",
+    "role": "Engineer"
   }
 ]
