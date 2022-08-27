@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "categories": ["Development"],
+    "title": "Title1",
+    "imgUrl": "/images/case-studies/1.png"
+  },
+  {
+    "id": "2",
+    "categories": ["Architecture", "Design"],
+    "title": "Title2",
+    "imgUrl": "/images/case-studies/2.png"
+  },
+  {
+    "id": "3",
+    "categories": ["Development"],
+    "title": "Title3",
+    "imgUrl": "/images/case-studies/3.png"
+  },
+  {
+    "id": "4",
+    "categories": [".Net"],
+    "title": "Title4",
+    "imgUrl": "/images/case-studies/4.png"
+  },
+  {
+    "id": "5",
+    "categories": ["Architecture"],
+    "title": "Title5",
+    "imgUrl": "/images/case-studies/5.png"
+  },
+  {
+    "id": "6",
+    "categories": [".Net"],
+    "title": "Title6",
+    "imgUrl": "/images/case-studies/6.png"
+  },
+  {
+    "id": "7",
+    "categories": ["Python"],
+    "title": "Title7",
+    "imgUrl": "/images/case-studies/7.png"
+  },
+  {
+    "id": "8",
+    "categories": ["Design"],
+    "title": "Title8",
+    "imgUrl": "/images/case-studies/8.png"
+  },
+  {
+    "id": "9",
+    "categories": ["Development"],
+    "title": "Title9",
+    "imgUrl": "/images/case-studies/9.png"
+  }
+]
