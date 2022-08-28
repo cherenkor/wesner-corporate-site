@@ -1,8 +1,4 @@
-import {
-  BriefIcon,
-  ClockIcon,
-  LocationIcon,
-} from 'components/shared/icons';
+import { BriefIcon, ClockIcon, LocationIcon } from 'components/shared/icons';
 import { Box, Button, Stack, Typography } from '@mui/material';
 import { IPositionFull } from 'models/interfaces/careers/position.interface';
 import PositionItem from './position-item';

@@ -1,4 +1,3 @@
-import { ICaseStudyFull } from './../models/interfaces/case-strudies/case-studies.interface';
 import { TLocales } from '../types/locales';
 import {
   IPosition,

@@ -9,7 +9,7 @@ interface IProps {
   caseStudy: ICaseStudy;
 }
 
-export default function CaseStudy({ caseStudy }: IProps): JSX.Element {
+export default function OtherCaseStudy({ caseStudy }: IProps): JSX.Element {
   const theme = useTheme();
   const { title, categories, imgUrl, previewUrl, id } = caseStudy;
   const getResponsiveFonts = useGetResponsiveFontVariants();
@@ -20,7 +20,7 @@ export default function CaseStudy({ caseStudy }: IProps): JSX.Element {
         gap={1}
         component={Link}
         underline="none"
-        color="grey.900"
+        color="grey.300"
         sx={{
           transition: theme.transitions.create('all', {
             duration: theme.transitions.duration.short,
@@ -33,7 +33,7 @@ export default function CaseStudy({ caseStudy }: IProps): JSX.Element {
         <Box
           position="relative"
           width={1}
-          sx={{ aspectRatio: { xs: '39 / 25', md: '33 / 25', lg: '23 / 15' } }}
+          sx={{ aspectRatio: '23 / 11' }}
           mb={{ xs: 1, lg: 2 }}
         >
           <Image
@@ -46,7 +46,15 @@ export default function CaseStudy({ caseStudy }: IProps): JSX.Element {
         {!!categories.length && (
           <Stack alignSelf="flex-start" gap={1} direction="row" flexWrap="wrap">
             {categories.map((item, index) => (
-              <Chip key={index} label={item} size="small" />
+              <Chip
+                key={index}
+                label={item}
+                size="small"
+                sx={{
+                  bgcolor: theme.palette.grey[100],
+                  color: theme.palette.grey[300],
+                }}
+              />
             ))}
           </Stack>
         )}

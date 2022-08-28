@@ -37,7 +37,13 @@ export default function CaseStudyBanner({ caseStudy }: IProps): JSX.Element {
           </Typography>
         </Stack>
       </Container>
-      <Box sx={{ position: 'relative', width: 1, aspectRatio: '3 / 1' }}>
+      <Box
+        sx={{
+          position: 'relative',
+          width: 1,
+          aspectRatio: { xs: '9 / 4', md: '96 / 35', lg: '3 / 1' },
+        }}
+      >
         <Image src={imgUrl} alt="" layout="fill" objectFit="cover" priority />
       </Box>
     </Box>

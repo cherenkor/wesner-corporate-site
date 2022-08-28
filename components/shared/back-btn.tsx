@@ -10,8 +10,6 @@ interface IProps {
 }
 
 export default function BackBtn({ path, text }: IProps): JSX.Element {
-  const t = useTranslations('careers');
-
   return (
     <NextLink href={path} passHref>
       <Link

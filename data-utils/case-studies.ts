@@ -1,6 +1,7 @@
 import { ICaseStudyFull } from './../models/interfaces/case-strudies/case-studies.interface';
 import { ICaseStudy } from 'models/interfaces/case-strudies/case-studies.interface';
-import { TLocales } from '@types/locales';
+import { TLocales } from '../types/locales';
+import { getUniqeItems } from 'utils/getUniqueItems';
 
 export const getCaseStudiesShortInfo = (locale: string): ICaseStudy[] => {
   const caseStudies = require(`/data/case-studies/case-studies.${locale}.json`);
@@ -39,5 +40,15 @@ export const getCaseStudiesPaths = (locales: TLocales) => {
       params: { id: item.id },
       locale,
     })),
-  );
+  );  
+};
+
+export const getOtherServices = (locale: string, id: string): ICaseStudy[] => {
+  const caseStudies = require(`/data/case-studies/case-studies.${locale}.json`);
+
+  const other = caseStudies.filter((item: ICaseStudy) => item.id !== id);
+
+  if (other.length < 3) return other;
+
+  return getUniqeItems(other, 2);
 };
