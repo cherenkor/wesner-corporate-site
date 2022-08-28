@@ -9,13 +9,20 @@ import StartDecoration from 'public/images/contact-us/start-decoration.png';
 import Success from 'components/features/contact-us/success';
 import ContactUsForm from '@components/features/contact-us/contact-us-form';
 import { FieldValues } from 'react-hook-form';
+import axios from 'axios';
 
 const ContactUs: NextPage = () => {
   const [isSubmited, setIsSubmited] = useState(false);
 
   const onFormSubmit = (values: FieldValues) => {
-    console.log(values);
-    setIsSubmited(true);
+    axios
+      .post('/api/contact', values)
+      .then((res) => {
+        if (res.status === 200) {
+          setIsSubmited(true);
+        }
+      })
+      .catch((err) => console.log(err));
   };
 
   return (

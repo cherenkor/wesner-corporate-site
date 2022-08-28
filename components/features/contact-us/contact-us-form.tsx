@@ -2,13 +2,15 @@ import ControlledInput from '@components/shared/controlled-input';
 import { Button, Stack } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import { FieldValues, FormProvider, useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { validation } from './validation-schema';
 
 interface IProps {
   onSubmit(values: FieldValues): void;
 }
 
 export default function ContactUsForm({ onSubmit }: IProps): JSX.Element {
-  const methods = useForm();
+  const methods = useForm({ resolver: yupResolver(validation) });
   const { handleSubmit } = methods;
   const t = useTranslations();
 

@@ -40,7 +40,7 @@ export const getCaseStudiesPaths = (locales: TLocales) => {
       params: { id: item.id },
       locale,
     })),
-  );  
+  );
 };
 
 export const getOtherServices = (locale: string, id: string): ICaseStudy[] => {
