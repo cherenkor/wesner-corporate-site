@@ -4,11 +4,16 @@ import { ERoutes } from 'models/enums/routes.enum';
 import { useTranslations } from 'next-intl';
 import NextLink from 'next/link';
 
-export default function PositionBackBtn(): JSX.Element {
+interface IProps {
+  path: string;
+  text: string;
+}
+
+export default function BackBtn({ path, text }: IProps): JSX.Element {
   const t = useTranslations('careers');
 
   return (
-    <NextLink href={ERoutes.Careers} passHref>
+    <NextLink href={path} passHref>
       <Link
         display="flex"
         alignItems="center"
@@ -18,7 +23,7 @@ export default function PositionBackBtn(): JSX.Element {
         variant="h6"
         textTransform="uppercase"
       >
-        <ArrowLeftIcon /> {t('backBtnText')}
+        <ArrowLeftIcon /> {text}
       </Link>
     </NextLink>
   );

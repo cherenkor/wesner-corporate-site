@@ -3,54 +3,166 @@
     "id": "1",
     "categories": ["Development"],
     "title": "Title1",
-    "imgUrl": "/images/case-studies/1.png"
+    "previewUrl": "/images/case-studies/1/1.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "customer": "Spairliners is a joint venture between Lufthansa Technik and Air France Industries. The company offers airlines a comprehensive solution for component supply. The offer includes the supply and management of the spare parts warehouse as well as the overhaul and repair of components, including the logistics required.",
+    "technologies": [
+      "Azure ServiceBus",
+      "Azure Web Services",
+      "WebJobs",
+      "LogicApps",
+      "AzureAD"
+    ],
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    },
+    "quote": {
+      "text": "I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.",
+      "author": "Michael Jordan"
+    },
+    "additionalInfo": [
+      {
+        "title": "Benefits for Sparliners",
+        "list": [
+          "Synchronous systems in real time.",
+          "Flexible connection of further backend systems.",
+          "Serverless solution – efficient in operation."
+        ]
+      }
+    ]
   },
   {
     "id": "2",
     "categories": ["Architecture", "Design"],
     "title": "Title2",
-    "imgUrl": "/images/case-studies/2.png"
+    "previewUrl": "/images/case-studies/2/2.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   },
   {
     "id": "3",
     "categories": ["Development"],
     "title": "Title3",
-    "imgUrl": "/images/case-studies/3.png"
+    "previewUrl": "/images/case-studies/3/3.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   },
   {
     "id": "4",
     "categories": [".Net"],
     "title": "Title4",
-    "imgUrl": "/images/case-studies/4.png"
+    "previewUrl": "/images/case-studies/4/4.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   },
   {
     "id": "5",
     "categories": ["Architecture"],
     "title": "Title5",
-    "imgUrl": "/images/case-studies/5.png"
+    "previewUrl": "/images/case-studies/5/5.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   },
   {
     "id": "6",
     "categories": [".Net"],
     "title": "Title6",
-    "imgUrl": "/images/case-studies/6.png"
+    "previewUrl": "/images/case-studies/6/6.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   },
   {
     "id": "7",
     "categories": ["Python"],
     "title": "Title7",
-    "imgUrl": "/images/case-studies/7.png"
+    "previewUrl": "/images/case-studies/7/7.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   },
   {
     "id": "8",
     "categories": ["Design"],
     "title": "Title8",
-    "imgUrl": "/images/case-studies/8.png"
+    "previewUrl": "/images/case-studies/8/8.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   },
   {
     "id": "9",
     "categories": ["Development"],
     "title": "Title9",
-    "imgUrl": "/images/case-studies/9.png"
+    "previewUrl": "/images/case-studies/9/9.png",
+    "imgUrl": "/images/case-studies/1/banner.png",
+    "generalInfo": {
+      "title": "Problem & Solution",
+      "text": [
+        "Spairliners needed a partner to connect the ERP and a newly introduced CRM. Specifically, information from the ERP should be made available to the support staff in Microsoft CRM Dynamics 365 without any delay. This ensures that the technical data in the communication line with the customer is available in real time.",
+        "We used pure cloud components to provide a web service for the ERP and to connect Microsoft CRM Dynamics 365.",
+        "The solution was created by first deploying an Azure web service that is called by the ERP and feeds data into the service bus. Web workers who subscribe to this service bus access this data and send it to Microsoft CRM Dynamics 365."
+      ],
+      "imgUrl": "/images/case-studies/1/illustration.png"
+    }
   }
 ]

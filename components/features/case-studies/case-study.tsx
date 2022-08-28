@@ -9,9 +9,9 @@ interface IProps {
   caseStudy: ICaseStudy;
 }
 
-export default function CaseStudy({ caseStudy}: IProps): JSX.Element {
+export default function CaseStudy({ caseStudy }: IProps): JSX.Element {
   const theme = useTheme();
-  const { title, categories, imgUrl, id } = caseStudy;
+  const { title, categories, imgUrl, previewUrl, id } = caseStudy;
   const getResponsiveFonts = useGetResponsiveFontVariants();
 
   return (
@@ -36,7 +36,7 @@ export default function CaseStudy({ caseStudy}: IProps): JSX.Element {
           sx={{ aspectRatio: { xs: '39 / 25', md: '33 / 25', lg: '23 / 15' } }}
           mb={{ xs: 1, lg: 2 }}
         >
-          <Image src={imgUrl} alt={title} layout="fill" objectFit="cover" />
+          <Image src={previewUrl || imgUrl} alt={title} layout="fill" objectFit="cover" />
         </Box>
         {!!categories.length && (
           <Stack alignSelf="flex-start" gap={1} direction="row" flexWrap="wrap">
