@@ -45,6 +45,7 @@ export default function ServiceItem({
           <CardContent>
             <Image src={img} alt="" width={80} height={80} />
             <Typography
+              component="h3"
               variant={getFontVariants({ medium: 'h5', large: 'h4' })}
               mt={{ xs: 1, md: 3, lg: 5 }}
             >

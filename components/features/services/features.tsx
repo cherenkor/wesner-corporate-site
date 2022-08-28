@@ -18,6 +18,7 @@ export default function Features({ service }: IProps): JSX.Element {
     <Box component="section" py={{ xs: 7, md: 8, lg: 14 }}>
       <Container>
         <Typography
+          component="h2"
           mb={{ xs: 1, md: 2 }}
           variant={getResponsiveFont({ medium: 'h4', large: 'h3' })}
           maxWidth={{ xs: 1, md: 3 / 4, lg: 2 / 3 }}

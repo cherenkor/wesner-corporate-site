@@ -41,7 +41,7 @@ export default function WhyWeSection(): JSX.Element {
               flex: 'none',
             }}
           >
-            <Image src={MainImage} alt="" />
+            <Image src={MainImage} alt="" priority width="504" height="504" />
           </Box>
           <Stack>
             <Typography
@@ -116,7 +116,7 @@ export default function WhyWeSection(): JSX.Element {
               flex: 'none',
             }}
           >
-            <Image src={AddImage} alt="" />
+            <Image src={AddImage} alt="" width="360" height="360" />
           </Box>
         </Stack>
       </Container>

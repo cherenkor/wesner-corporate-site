@@ -16,6 +16,7 @@ export default function OtherSection({ other }: IProps): JSX.Element {
     <Box component="section" py={{ xs: 5, md: 6, lg: 10 }} bgcolor="grey.900">
       <Container>
         <Typography
+          component="h2"
           color="grey.300"
           mb={{ xs: 3, md: 4, lg: 6 }}
           variant={getFontVariants({ small: 'h4', medium: 'h3', large: 'h2' })}

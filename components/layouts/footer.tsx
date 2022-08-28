@@ -40,7 +40,7 @@ export default function Footer(): JSX.Element {
               flexWrap="wrap"
             >
               <Box flexBasis={{ xs: '100%', sm: '40%', md: 'auto' }}>
-                <Typography variant="h6" mb={2}>
+                <Typography component="div" variant="h6" mb={2}>
                   {t('footer.menu')}
                 </Typography>
                 <Stack gap={1}>
@@ -65,7 +65,9 @@ export default function Footer(): JSX.Element {
                 </Stack>
               </Box>
               <Stack gap={2} flexBasis={{ xs: '100%', sm: '40%', md: 'auto' }}>
-                <Typography variant="h6">{t('footer.office')}</Typography>
+                <Typography component="div" variant="h6">
+                  {t('footer.office')}
+                </Typography>
                 <Stack direction="row" gap={1}>
                   <MapIcon sx={{ fontSize: 16, mt: 0.5 }} />
                   <Typography variant="body2" fontSize={{ xs: 14, lg: 16 }}>

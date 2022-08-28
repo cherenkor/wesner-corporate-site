@@ -33,7 +33,12 @@ export default function AproachItem({
       }}
     >
       <CardContent>
-        <Typography variant="subtitle1" color="primary.main" mb={1}>
+        <Typography
+          component="div"
+          variant="subtitle1"
+          color="primary.main"
+          mb={1}
+        >
           {number}
         </Typography>
         <Typography

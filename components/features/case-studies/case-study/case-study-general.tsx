@@ -15,6 +15,7 @@ export default function CaseStudyGeneral({ generalInfo }: IProps) {
   return (
     <Stack gap={{ xs: 1, lg: 2 }}>
       <Typography
+        component="h2"
         variant={getFontVariants({
           medium: 'h4',
           large: 'h3',

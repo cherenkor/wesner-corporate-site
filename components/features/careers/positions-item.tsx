@@ -36,7 +36,9 @@ export default function PositionsItem({ position }: IProps): JSX.Element {
           }}
         >
           <Stack justifyContent="space-between" gap={1} height={1}>
-            <Typography variant="h4">{title}</Typography>
+            <Typography component="h3" variant="h4">
+              {title}
+            </Typography>
             <Typography color={theme.palette.grey[800]}>{location}</Typography>
             <EastIcon
               sx={{

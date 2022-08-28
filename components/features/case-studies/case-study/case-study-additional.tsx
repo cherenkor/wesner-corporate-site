@@ -17,6 +17,7 @@ export default function CaseStudyAdditional({
   return (
     <Stack gap={1}>
       <Typography
+        component="h3"
         variant={getFontVariants({
           medium: 'h5',
           large: 'h4',

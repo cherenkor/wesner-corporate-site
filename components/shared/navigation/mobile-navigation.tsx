@@ -24,7 +24,11 @@ export default function MobileNavigation({
         color={isPrimary ? theme.palette.grey[300] : theme.palette.grey[900]}
         mr={{ xs: 1, md: 2 }}
       >
-        <IconButton onClick={() => setOpen(true)} color="inherit">
+        <IconButton
+          onClick={() => setOpen(true)}
+          color="inherit"
+          aria-label="menu"
+        >
           <MenuIcon />
         </IconButton>
       </Box>
@@ -58,7 +62,7 @@ export default function MobileNavigation({
               <CloseIcon />
             </IconButton>
           </Stack>
-          <Stack gap={2} pt={6}>
+          <Stack gap={2} pt={6} component="nav">
             {mainNavConfig.map((item) => (
               <MobileNavigationItem
                 key={item.name}

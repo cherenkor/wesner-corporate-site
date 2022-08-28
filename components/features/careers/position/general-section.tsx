@@ -13,7 +13,10 @@ export default function InfoSection({ info }: IProps): JSX.Element {
 
   return (
     <Stack component="section" gap={1}>
-      <Typography variant={getFontVariants({ medium: 'h5', large: 'h4' })}>
+      <Typography
+        component="h2"
+        variant={getFontVariants({ medium: 'h5', large: 'h4' })}
+      >
         {title}
       </Typography>
       {text && (

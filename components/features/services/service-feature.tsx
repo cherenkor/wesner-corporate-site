@@ -15,7 +15,10 @@ export default function ServiceFeature({
 
   return (
     <Stack gap={1} gridColumn={1}>
-      <Typography variant={getResponsiveFont({ medium: 'h5', large: 'h4' })}>
+      <Typography
+        component="h3"
+        variant={getResponsiveFont({ medium: 'h5', large: 'h4' })}
+      >
         {title}
       </Typography>
       {!!paragraphs.length && (

@@ -19,6 +19,7 @@ export default function OtherServices({ services }: IProps) {
     <Box component="section" py={{ xs: 5, md: 6, lg: 10 }} bgcolor="grey.900">
       <Container fixed>
         <Typography
+          component="h2"
           variant={getFontVariants({ small: 'h4', medium: 'h3', large: 'h2' })}
           color="grey.300"
           mb={{ xs: 2, md: 3 }}

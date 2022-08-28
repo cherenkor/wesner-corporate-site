@@ -21,6 +21,7 @@ export default function Navigation({ isPrimary }: INavigateion): JSX.Element {
       position="sticky"
       top={0}
       zIndex={2}
+      component="header"
     >
       <Container fixed>
         <Stack
@@ -35,7 +36,7 @@ export default function Navigation({ isPrimary }: INavigateion): JSX.Element {
           <Stack direction="row" alignItems="center" gap={2}>
             {!isDesktop && <MobileNavigation isPrimary={isPrimary} />}
             {isDesktop && (
-              <Box display="flex">
+              <Box display="flex" component="nav">
                 {mainNavConfig.map((item) => (
                   <NavigationItem
                     key={item.name}

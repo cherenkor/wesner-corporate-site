@@ -19,12 +19,13 @@ export default function Positions({ positions }: IProps): JSX.Element {
     <Box component="section" pb={{ xs: 5, md: 10, lg: 17 }}>
       <Container>
         <Typography
+          component="h2"
           variant={getResponsiveFont({
             small: 'h4',
             medium: 'h3',
             large: 'h2',
           })}
-          mb={{ lg: 3 }}
+          mb={3}
         >
           {t('positionsTitle')}
         </Typography>

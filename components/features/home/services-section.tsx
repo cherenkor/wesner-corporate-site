@@ -20,6 +20,7 @@ export default function ServicesSection({
     <Box component="section" py={{ xs: 5, md: 10, lg: 17 }}>
       <Container fixed>
         <Typography
+          component="h2"
           variant={getTitleVeriants({ small: 'h4', medium: 'h3', large: 'h2' })}
           mb={3}
         >

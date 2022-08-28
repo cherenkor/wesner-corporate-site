@@ -23,6 +23,7 @@ export default function CaseStudySidebarCard({
       }}
     >
       <Typography
+        component="h2"
         variant={getResponsiveFonts({ medium: 'h5', large: 'h4' })}
         mb={1}
       >

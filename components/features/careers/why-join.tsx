@@ -22,6 +22,7 @@ export default function WhyJoin(): JSX.Element {
       >
         <Stack color="grey.800" gap={1} pr={{ xs: 3, md: 13.5, lg: 0 }}>
           <Typography
+            component="h2"
             color="grey.900"
             variant={getResponsiveFont({
               small: 'h4',

@@ -30,6 +30,7 @@ export default function ServiceItem({ item }: IServiceItem): JSX.Element {
         }}
       >
         <Card
+          component="article"
           sx={{
             position: 'relative',
             pt: { xs: 2, md: 3 },
@@ -41,6 +42,7 @@ export default function ServiceItem({ item }: IServiceItem): JSX.Element {
           <CardContent>
             <Image src={whiteIconUrl || ''} alt="" width={80} height={80} />
             <Typography
+              component="h3"
               variant={getFontVariants({ medium: 'h5', large: 'h4' })}
               color="grey.300"
               mt={{ xs: 2, md: 3 }}

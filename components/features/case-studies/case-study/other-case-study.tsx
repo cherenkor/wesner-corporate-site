@@ -31,6 +31,7 @@ export default function OtherCaseStudy({ caseStudy }: IProps): JSX.Element {
         }}
       >
         <Box
+          component="article"
           position="relative"
           width={1}
           sx={{ aspectRatio: '23 / 11' }}
@@ -58,7 +59,10 @@ export default function OtherCaseStudy({ caseStudy }: IProps): JSX.Element {
             ))}
           </Stack>
         )}
-        <Typography variant={getResponsiveFonts({ medium: 'h5', large: 'h4' })}>
+        <Typography
+          component="h3"
+          variant={getResponsiveFonts({ medium: 'h5', large: 'h4' })}
+        >
           {title}
         </Typography>
       </Stack>

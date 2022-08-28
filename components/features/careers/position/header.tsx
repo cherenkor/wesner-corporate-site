@@ -22,6 +22,7 @@ export default function Header({ position }: IProps): JSX.Element {
       <Stack alignItems="flex-start" gap={{ xs: 2, lg: 3 }}>
         <BackBtn path={ERoutes.Careers} text={t('careers.backBtnText')} />
         <Typography
+          component="h1"
           mt={{ xs: 1, lg: 3 }}
           variant={getResponsiveFonts({ medium: 'h4', large: 'h2' })}
         >

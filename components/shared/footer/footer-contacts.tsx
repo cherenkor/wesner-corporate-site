@@ -40,7 +40,9 @@ export default function FooterContacts(): JSX.Element {
   );
   return (
     <Stack gap={1}>
-      <Typography variant="h6">{t('footer.contacts')}</Typography>
+      <Typography component="div" variant="h6">
+        {t('footer.contacts')}
+      </Typography>
       <Stack direction="row" alignItems="center" gap={1}>
         <MailOutlineIcon sx={{ fontSize: 18 }} />
         <Link href="mailto:support@wesner-software.de" sx={{ ...linkStyles }}>
@@ -58,16 +60,23 @@ export default function FooterContacts(): JSX.Element {
           href="https://facebook.com"
           target="_blank"
           sx={socialIconsStyles}
+          aria-label="facebook in page"
         >
           <FacebookIcon sx={{ fontSize: 16 }} />
         </Link>
-        <Link href="https://twitter.com" target="_blank" sx={socialIconsStyles}>
+        <Link
+          href="https://twitter.com"
+          target="_blank"
+          sx={socialIconsStyles}
+          aria-label="twitter in page"
+        >
           <TwitterIcon sx={{ fontSize: 16 }} />
         </Link>
         <Link
           href="https://linkedin.com"
           target="_blank"
           sx={socialIconsStyles}
+          aria-label="linked in page"
         >
           <LinkedInIcon sx={{ fontSize: 16 }} />
         </Link>

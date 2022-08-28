@@ -19,7 +19,7 @@ export default function Logo({
   if (isWhite) {
     return (
       <NextLink href={ERoutes.Home} passHref>
-        <Link onClick={onClick}>
+        <Link onClick={onClick} aria-label="homepage">
           <LogoWhite />
         </Link>
       </NextLink>
@@ -28,7 +28,7 @@ export default function Logo({
   if (isSmall) {
     return (
       <NextLink href={ERoutes.Home} passHref>
-        <Link onClick={onClick}>
+        <Link onClick={onClick} aria-label="homepage">
           <LogoSmall />
         </Link>
       </NextLink>
@@ -36,7 +36,7 @@ export default function Logo({
   }
   return (
     <NextLink href={ERoutes.Home} passHref>
-      <Link onClick={onClick}>
+      <Link onClick={onClick} aria-label="homepage">
         <LogoDefault />
       </Link>
     </NextLink>

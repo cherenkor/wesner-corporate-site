@@ -16,12 +16,12 @@ export default function BannerLogos(): JSX.Element {
       py={{ xs: 1, md: 2 }}
       alignItems="center"
     >
-      <Image src={Logo1} alt="partner company" />
-      <Image src={Logo2} alt="partner company" />
+      <Image src={Logo1} alt="partner company" width="158" height="48" />
+      <Image src={Logo2} alt="partner company" width="168" height="26" />
       <Box height={22}>
-        <Image src={Logo3} alt="partner company" />
+        <Image src={Logo3} alt="partner company" width="168" height="22" />
       </Box>
-      <Image src={Logo4} alt="partner company" />
+      <Image src={Logo4} alt="partner company" width="72" height="48" />
     </Stack>
   );
 }

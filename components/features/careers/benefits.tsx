@@ -12,6 +12,7 @@ export default function Benefits(): JSX.Element {
     <Box py={{ xs: 5, md: 10, lg: 17 }} component="section">
       <Container fixed>
         <Typography
+          component="h2"
           variant={getResponsiveFont({
             small: 'h4',
             medium: 'h3',
