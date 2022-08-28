@@ -61,7 +61,7 @@ export default function Banner(): JSX.Element {
           </Link>
         </Stack>
         <Box pr={2.5} maxWidth={{ md: 600, lg: 'none' }}>
-          <Image src={BannerDecor} alt="" priority/>
+          <Image src={BannerDecor} alt="" priority />
         </Box>
       </Stack>
       <Container fixed sx={{ mt: { xs: 6, lg: 0.5 } }}>

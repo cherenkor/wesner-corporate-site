@@ -1,6 +1,8 @@
 import { Chip, Container, Grid, Pagination, Stack } from '@mui/material';
+import { ERoutes } from 'models/enums/routes.enum';
 import { ICaseStudy } from 'models/interfaces/case-strudies/case-studies.interface';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import CaseStudy from './case-study';
 
 interface IProps {
@@ -14,21 +16,51 @@ export default function CaseStudiesList({
   caseStudies,
   categories,
 }: IProps): JSX.Element {
+  const { push, isReady, query } = useRouter();
+  const [activeFilter, setActiveFilter] = useState('All');
+  const [activePage, setActivePage] = useState(1);
+  const [filteredItems, setFilterdItems] = useState(caseStudies);
   const [itemsToShow, setItemsToShow] = useState(
-    caseStudies?.slice(0, ITEM_PER_PAGE),
+    filteredItems?.slice(0, ITEM_PER_PAGE),
   );
   const paginationPagesCount = Math.ceil(
-    (caseStudies?.length || 1) / ITEM_PER_PAGE,
+    (filteredItems?.length || 1) / ITEM_PER_PAGE,
   );
 
   const onPageChange = (pageNum: number) => {
+    setActivePage(pageNum);
+  };
+
+  const onItemSelect = (category: string) => {
+    push(ERoutes.CaseStudies, {
+      query: {
+        category,
+      },
+    });
+  };
+
+  useEffect(() => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const data = urlSearchParams.get('category');
+    if (!data || data === 'All') {
+      setActiveFilter('All');
+      setFilterdItems(caseStudies);
+    } else {
+      setActiveFilter(data);
+      setFilterdItems(
+        caseStudies?.filter((item) => item.categories.includes(data as string)),
+      );
+    }
+  }, [query, caseStudies, isReady]);
+
+  useEffect(() => {
     setItemsToShow(
-      caseStudies?.slice(
-        ITEM_PER_PAGE * (pageNum - 1),
-        ITEM_PER_PAGE * pageNum,
+      filteredItems?.slice(
+        ITEM_PER_PAGE * (activePage - 1),
+        ITEM_PER_PAGE * activePage,
       ),
     );
-  };
+  }, [activePage, filteredItems]);
 
   return (
     <Container>
@@ -40,7 +72,12 @@ export default function CaseStudiesList({
           pb={{ xs: 5, lg: 6 }}
         >
           {categories.map((item, index) => (
-            <Chip key={index} label={item} />
+            <Chip
+              key={index}
+              label={item}
+              onClick={() => onItemSelect(item)}
+              color={item === activeFilter ? 'primary' : 'default'}
+            />
           ))}
         </Stack>
       )}

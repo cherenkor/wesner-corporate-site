@@ -14,8 +14,8 @@ const socialIconsStyles = {
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
-  width: 24,
-  height: 24,
+  width: { xs: 48, md: 24 },
+  height: { xs: 48, md: 24 },
   borderRadius: 1,
   backgroundColor: 'grey.100',
 };

@@ -18,7 +18,10 @@ export const getCaseStudiesShortInfo = (locale: string): ICaseStudy[] => {
 export const getCaseStudiesUniqueCategories = (locale: string): string[] => {
   const caseStudies = require(`/data/case-studies/case-studies.${locale}.json`);
 
-  const categories = caseStudies.flatMap((item: ICaseStudy) => item.categories);
+  const categories = [
+    'All',
+    ...caseStudies.flatMap((item: ICaseStudy) => item.categories),
+  ];
 
   return Array.from(new Set(categories));
 };
