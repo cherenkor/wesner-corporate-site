@@ -1,5 +1,5 @@
 import ControlledInput from '@components/shared/controlled-input';
-import { Button, Stack } from '@mui/material';
+import { Button, CircularProgress, Stack } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import { FieldValues, FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -7,9 +7,13 @@ import { validation } from './validation-schema';
 
 interface IProps {
   onSubmit(values: FieldValues): void;
+  isLoading: boolean;
 }
 
-export default function ContactUsForm({ onSubmit }: IProps): JSX.Element {
+export default function ContactUsForm({
+  onSubmit,
+  isLoading,
+}: IProps): JSX.Element {
   const methods = useForm({ resolver: yupResolver(validation) });
   const { handleSubmit } = methods;
   const t = useTranslations();
@@ -41,7 +45,25 @@ export default function ContactUsForm({ onSubmit }: IProps): JSX.Element {
           maxRows={4}
         />
       </Stack>
-      <Button type="submit" fullWidth={true} onClick={handleSubmit(onSubmit)}>
+      <Button
+        type="submit"
+        fullWidth={true}
+        onClick={handleSubmit(onSubmit)}
+        sx={{ position: 'relative' }}
+        startIcon={
+          isLoading && (
+            <CircularProgress
+              color="inherit"
+              size={20}
+              sx={{
+                position: 'absolute',
+                left: 16,
+                top: 14,
+              }}
+            />
+          )
+        }
+      >
         {t('contactUs.button')}
       </Button>
     </FormProvider>

@@ -26,7 +26,12 @@ export default function NavigationMenuItem({
   const { name, children } = item;
   return (
     <>
-      <Link component="button" sx={sx} onClick={handleClick}>
+      <Link
+        component="button"
+        sx={sx}
+        onClick={handleClick}
+        onMouseOver={handleClick}
+      >
         {name}
       </Link>
       <Menu
@@ -41,6 +46,7 @@ export default function NavigationMenuItem({
           vertical: 'top',
           horizontal: 'left',
         }}
+        MenuListProps={{ onMouseLeave: handleClose }}
       >
         {(children || []).map(({ name, path }) => {
           const isActive = router.asPath.includes(path);

@@ -2,19 +2,33 @@ import type { NextPage } from 'next';
 import { BaseLayout } from '@components/layouts/base-layout';
 import { ReactElement, useState } from 'react';
 import Container from '@mui/material/Container';
-import { Box, Stack } from '@mui/material';
+import { Alert, Box, Snackbar, Stack } from '@mui/material';
 import Title from 'components/features/contact-us/title';
 import Image from 'next/image';
 import StartDecoration from 'public/images/contact-us/start-decoration.png';
 import Success from 'components/features/contact-us/success';
 import ContactUsForm from '@components/features/contact-us/contact-us-form';
-import { FieldValues } from 'react-hook-form';
+import { FieldValues, set } from 'react-hook-form';
 import axios from 'axios';
 
 const ContactUs: NextPage = () => {
   const [isSubmited, setIsSubmited] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [snackBar, setSnackBar] = useState({
+    open: false,
+    message: '',
+  });
+
+  const handleClose = (_?: React.SyntheticEvent | Event, reason?: string) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setSnackBar({ open: false, message: '' });
+  };
 
   const onFormSubmit = (values: FieldValues) => {
+    setIsLoading(true);
     axios
       .post('/api/contact', values)
       .then((res) => {
@@ -22,7 +36,13 @@ const ContactUs: NextPage = () => {
           setIsSubmited(true);
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        setSnackBar({ open: true, message: err.message });
+        console.log(snackBar);
+      })
+      .then(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -41,7 +61,21 @@ const ContactUs: NextPage = () => {
           <Title />
           <Image src={StartDecoration} alt="" priority />
           <Box gridColumn={{ xs: 1, lg: 2 }} gridRow={{ xs: 2, lg: '1/3' }}>
-            <ContactUsForm onSubmit={onFormSubmit} />
+            <ContactUsForm onSubmit={onFormSubmit} isLoading={isLoading} />
+            <Snackbar
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+              onClose={handleClose}
+              open={snackBar.open}
+              autoHideDuration={2000}
+            >
+              <Alert
+                onClose={() => setSnackBar({ open: false, message: '' })}
+                severity="error"
+                sx={{ bgcolor: 'error.main', color: 'grey.300' }}
+              >
+                {snackBar.message}
+              </Alert>
+            </Snackbar>
           </Box>
         </Stack>
       )}
