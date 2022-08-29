@@ -32,7 +32,6 @@ export default function TermsContent({ content }: IProps): JSX.Element {
                     {item}
                   </Typography>
                 )}
-                
               </>
             ))}
           </Stack>

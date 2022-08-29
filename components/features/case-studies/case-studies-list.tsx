@@ -28,16 +28,32 @@ export default function CaseStudiesList({
   );
 
   const onPageChange = (pageNum: number) => {
+    push(ERoutes.CaseStudies, {
+      query: {
+        category: activeFilter,
+        activePage: pageNum,
+      },
+    });
     setActivePage(pageNum);
   };
 
   const onItemSelect = (category: string) => {
+    setActivePage(1);
     push(ERoutes.CaseStudies, {
       query: {
         category,
+        activePage: 1,
       },
     });
   };
+
+  useEffect(() => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const active = urlSearchParams.get('activePage');
+    if (active) {
+      setActivePage(+active);
+    }
+  }, []);
 
   useEffect(() => {
     const urlSearchParams = new URLSearchParams(window.location.search);
@@ -51,7 +67,7 @@ export default function CaseStudiesList({
         caseStudies?.filter((item) => item.categories.includes(data as string)),
       );
     }
-  }, [query, caseStudies, isReady]);
+  }, [query, caseStudies, isReady, activePage]);
 
   useEffect(() => {
     setItemsToShow(
@@ -91,6 +107,7 @@ export default function CaseStudiesList({
       {(caseStudies?.length || 0) > ITEM_PER_PAGE && (
         <Stack alignItems="center" my={{ xs: 5, md: 6, lg: 10 }}>
           <Pagination
+            page={activePage}
             count={paginationPagesCount}
             onChange={(_, number) => onPageChange(number)}
           />
