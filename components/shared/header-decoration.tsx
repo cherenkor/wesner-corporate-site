@@ -1,7 +1,7 @@
 import { Box, Container, Stack } from '@mui/material';
 import React from 'react';
 
-export default function PositionDecoration(): JSX.Element {
+export default function HeaderDecoration(): JSX.Element {
   return (
     <Stack
       justifyContent="flex-end"

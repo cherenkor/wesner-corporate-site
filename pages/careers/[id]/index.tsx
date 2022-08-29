@@ -5,10 +5,10 @@ import ContactUs from 'components/shared/contact-us/contact-us';
 import { IPositionFull } from 'models/interfaces/careers/position.interface';
 import Header from 'components/features/careers/position/header';
 import { getCareersPaths, getSinglePosition } from 'data-utils/careers';
-import PositionDecoration from 'components/features/careers/position/position-decoration';
 import { Container, Stack } from '@mui/material';
 import InfoSection from 'components/features/careers/position/general-section';
 import Additional from 'components/features/careers/position/additional';
+import HeaderDecoration from 'components/shared/header-decoration';
 
 interface IPositionPage {
   position: IPositionFull;
@@ -19,7 +19,7 @@ const Position: NextPage<IPositionPage> = ({ position }) => {
 
   return (
     <>
-      <PositionDecoration />
+      <HeaderDecoration />
 
       <Container fixed>
         <Stack
