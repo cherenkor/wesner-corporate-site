@@ -23,5 +23,9 @@
     "description": "If you need it, we can build it. Our employees deliver maximum value through flexibility, versatility, and atitude.",
     "button": "Contact Us",
     "applyNow": "Apply Now"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "date": "Effective date: June 6, 2022"
   }
 }

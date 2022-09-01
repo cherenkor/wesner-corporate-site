@@ -2,6 +2,7 @@ import { Link, useTheme } from '@mui/material';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { ERoutes } from 'models/enums/routes.enum';
 import { useTranslations } from 'next-intl';
 import NextLink from 'next/link';
 
@@ -28,7 +29,7 @@ export default function FooterBottom(): JSX.Element {
             typography: theme.typography.caption,
           }}
         >
-          <NextLink href="/policy" passHref>
+          <NextLink href={ERoutes.Policy} passHref>
             <Link
               sx={{
                 color: theme.palette.grey[200],
@@ -40,7 +41,7 @@ export default function FooterBottom(): JSX.Element {
             </Link>
           </NextLink>
           &nbsp;/&nbsp;
-          <NextLink href="/terms" passHref>
+          <NextLink href={ERoutes.Terms} passHref>
             <Link
               sx={{
                 color: theme.palette.grey[200],

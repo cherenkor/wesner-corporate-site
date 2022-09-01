@@ -53,7 +53,10 @@ export default function NavigationMenuItem({
           return (
             <NextLink key={name} href={path}>
               <MenuItem
-                sx={{ color: isActive ? 'primary.main' : 'grey.800' }}
+                autoFocus={false}
+                sx={{
+                  color: isActive ? 'primary.main' : 'grey.800',
+                }}
                 onClick={handleClose}
               >
                 {name}

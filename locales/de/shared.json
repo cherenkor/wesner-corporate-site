@@ -23,5 +23,9 @@
     "description": "Wenn Sie es brauchen, können wir es bauen. Unsere Mitarbeiter liefern maximalen Mehrwert durch Flexibilität, Vielseitigkeit und Einstellung.",
     "button": "Kontaktiere uns",
     "applyNow": "Jetzt bewerben"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "date": "Effective date: June 6, 2022"
   }
 }

@@ -3,3 +3,44 @@ h1, h2, h3, h4, h5, h6 {
     word-break: break-word;
     overflow-wrap: anywhere;
 }
+
+.fadeIn {
+    animation: 0.4s fadeIn forwards;
+}
+
+ul,ol {
+    margin: 0;
+    padding-left: 24px;
+}
+
+dfn {
+    font-weight: bold;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slideIn {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translate(0, 12px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

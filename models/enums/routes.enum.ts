@@ -5,7 +5,7 @@ export enum ERoutes {
   Company = '/company',
   Careers = '/careers',
   Terms = '/terms',
-  Policy = '/policy',
+  Policy = '/privacy-policy',
   ContactUs = '/contact-us',
 }
 

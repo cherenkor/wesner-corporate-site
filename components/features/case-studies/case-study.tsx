@@ -17,6 +17,7 @@ export default function CaseStudy({ caseStudy }: IProps): JSX.Element {
   return (
     <NextLink href={`${ERoutes.CaseStudies}/${id}`} passHref>
       <Stack
+        className="fadeIn"
         gap={1}
         component={Link}
         underline="none"
