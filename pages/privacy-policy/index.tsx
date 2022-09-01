@@ -17,10 +17,7 @@ const Terms: NextPage = () => {
     <>
       <HeaderDecoration />
       <Container fixed>
-        <Stack
-          px={{ xs: 3, lg: 27 }}
-          pb={{ xs: 6, lg: 10 }}
-        >
+        <Stack px={{ xs: 3, lg: 27 }} pb={{ xs: 6, lg: 10 }}>
           <Typography
             component="h1"
             variant={getFontVariants({

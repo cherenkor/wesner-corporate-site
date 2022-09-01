@@ -16,6 +16,13 @@ export default function Button(theme: Theme): Components {
           boxSizing: 'border-box',
           height: 48,
         },
+        outlined: {
+          borderWidth: 2,
+          borderColor: theme.palette.primary.main,
+          '&:hover,&:active,&:focus': {
+            borderWidth: 2,
+          },
+        },
         containedPrimary: {
           border: `1px solid ${alpha(theme.palette.primary.main, 0)}`,
           '&:hover, &:active': {
