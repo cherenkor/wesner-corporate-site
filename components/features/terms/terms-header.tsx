@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { ITerms } from 'models/interfaces/terms/terms.interface';
@@ -28,8 +29,19 @@ export default function TermsHeader({ header }: IProps): JSX.Element {
       </Typography>
       <Stack gap={1}>
         {description.map((item, index) => (
-          <Typography color="grey.800" variant="body2" key={index}>
-            {item}
+          <Typography
+            component="div"
+            color="grey.800"
+            variant="body2"
+            key={index}
+            sx={{
+              '& a': {
+                textDecoration: 'none',
+                color: 'primary.main',
+              },
+            }}
+          >
+            <Box component="div" dangerouslySetInnerHTML={{ __html: item }} />
           </Typography>
         ))}
       </Stack>

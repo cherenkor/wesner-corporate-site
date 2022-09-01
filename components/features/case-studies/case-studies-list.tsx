@@ -99,7 +99,7 @@ export default function CaseStudiesList({
       )}
       <Grid container columnSpacing={3} rowSpacing={{ xs: 5, md: 6, lg: 10 }}>
         {itemsToShow?.map((study) => (
-          <Grid  item key={study.id} xs={12} md={6}>
+          <Grid item key={study.id} xs={12} md={6}>
             <CaseStudy caseStudy={study} />
           </Grid>
         ))}

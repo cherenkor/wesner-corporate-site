@@ -28,9 +28,19 @@ export default function TermsContent({ content }: IProps): JSX.Element {
             {content?.text?.map((item, index) => (
               <>
                 {typeof item === 'string' && (
-                  <Typography color="grey.800" variant="body2" key={index}>
-                    {item}
-                  </Typography>
+                  <Typography
+                    component="div"
+                    color="grey.800"
+                    variant="body2"
+                    key={index}
+                    dangerouslySetInnerHTML={{ __html: item }}
+                    sx={{
+                      '& a': {
+                        textDecoration: 'none',
+                        color: 'primary.main',
+                      },
+                    }}
+                  />
                 )}
               </>
             ))}

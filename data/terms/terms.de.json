@@ -2,7 +2,7 @@
   "title": "Terms and Conditions",
   "lastUpdated": "Last updated: June 6, 2022",
   "description": [
-    "Please read these Terms of Use (“Terms”, “Terms of Use”) carefully before using the https://wesner-software.com website (the “Service”) operated by Wesner Software (“us”, “we”, or “our”).",
+    "Please read these Terms of Use (“Terms”, “Terms of Use”) carefully before using the <a href='https://wesner-software.com' target='_blank'>https://wesner-software.com</a> website (the “Service”) operated by Wesner Software (“us”, “we”, or “our”).",
     "Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.",
     "By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service."
   ],
@@ -64,7 +64,7 @@
       "title": "Contact Us",
       "content": {
         "text": [
-          "If you have any questions about these Terms, please contact us."
+          "If you have any questions about these Terms, please <a href='mailto:support@wesner-software.de' target='_blank'>contact us</a>."
         ]
       }
     }
