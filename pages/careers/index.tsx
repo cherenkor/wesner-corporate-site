@@ -8,6 +8,7 @@ import WhyJoin from 'components/features/careers/why-join';
 import Positions from 'components/features/careers/positions';
 import { getShortenPositionsList } from 'data-utils/careers';
 import { IPosition } from 'models/interfaces/careers/position.interface';
+import Head from 'next/head';
 
 interface ICareersProps {
   positions?: IPosition[];
@@ -16,6 +17,12 @@ interface ICareersProps {
 const Careers: NextPage<ICareersProps> = ({ positions }) => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <BannerSection />
       <Benefits />
       <WhyJoin />

@@ -7,6 +7,7 @@ import Banner from 'components/features/company/banner';
 import Owner from 'components/features/company/owner';
 import Roadmap from 'components/features/company/roadmap';
 import Team, { ITeamMember } from 'components/features/company/team';
+import Head from 'next/head';
 
 interface ICompanyPage {
   team?: ITeamMember[];
@@ -15,6 +16,12 @@ interface ICompanyPage {
 const Company: NextPage<ICompanyPage> = ({ team }) => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <Banner />
       <ExpertiseSection />
       <Owner />

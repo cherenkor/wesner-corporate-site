@@ -8,6 +8,7 @@ import Container from '@mui/material/Container';
 import HeaderDecoration from 'components/shared/header-decoration';
 import TermsHeader from '@components/features/terms/terms-header';
 import TermsContent from '@components/features/terms/terms-content';
+import Head from 'next/head';
 
 interface ITermsPage {
   content: ITerms;
@@ -16,6 +17,12 @@ interface ITermsPage {
 const Terms: NextPage<ITermsPage> = ({ content }) => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <HeaderDecoration />
       <Container fixed>
         <Stack

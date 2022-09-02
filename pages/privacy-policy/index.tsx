@@ -8,6 +8,7 @@ import MainContentEn from '@components/features/privacy-policy/main-content-en';
 import { useTranslations } from 'next-intl';
 import { Typography } from '@mui/material';
 import { useGetResponsiveFontVariants } from 'utils/hooks/responsiveFontVariant.util';
+import Head from 'next/head';
 
 const Terms: NextPage = () => {
   const t = useTranslations('privacyPolicy');
@@ -15,6 +16,12 @@ const Terms: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <HeaderDecoration />
       <Container fixed>
         <Stack px={{ xs: 3, lg: 27 }} pb={{ xs: 6, lg: 10 }}>

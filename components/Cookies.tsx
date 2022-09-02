@@ -41,7 +41,7 @@ export default function Cookies({ open, setOpen }: IProps): JSX.Element {
       onClose={handleClose}
       anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
     >
-      <Box>
+      <Box maxWidth="90vw">
         <Stack
           direction="column"
           sx={{

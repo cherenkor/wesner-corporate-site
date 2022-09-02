@@ -14,6 +14,7 @@ import {
 import OtherServices from 'components/features/services/other-services';
 import ServiceBanner from 'components/features/services/service-banner';
 import Features from 'components/features/services/features';
+import Head from 'next/head';
 
 interface IServicePage {
   services: IResidualService[];
@@ -23,6 +24,12 @@ interface IServicePage {
 const Service: NextPage<IServicePage> = ({ services, service }) => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <ServiceBanner service={service} />
       <Features service={service} />
       <OtherServices services={services} />

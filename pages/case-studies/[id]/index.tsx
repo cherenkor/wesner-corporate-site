@@ -14,6 +14,7 @@ import {
 import CaseStudyBanner from 'components/features/case-studies/case-study/case-study-banner';
 import CaseStudyMainInfo from 'components/features/case-studies/case-study/case-study-main-info';
 import OtherSection from 'components/features/case-studies/case-study/other-section';
+import Head from 'next/head';
 
 interface IProps {
   caseStudy: ICaseStudyFull;
@@ -23,6 +24,12 @@ interface IProps {
 const CaseStudy: NextPage<IProps> = ({ caseStudy, other }) => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <CaseStudyBanner caseStudy={caseStudy} />
       <CaseStudyMainInfo caseStudy={caseStudy} />
       {!!other?.length && <OtherSection other={other} />}

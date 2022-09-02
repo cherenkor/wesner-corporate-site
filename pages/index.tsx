@@ -8,6 +8,7 @@ import ServicesSection from 'components/features/home/services-section';
 import Banner from 'components/features/home/banner';
 import { getServicesShortInfo } from 'data-utils/services';
 import { IService } from 'models/interfaces/services/service.interface';
+import Head from 'next/head';
 
 interface IHomePage {
   services: IService[];
@@ -16,6 +17,12 @@ interface IHomePage {
 const Home: NextPage<IHomePage> = ({ services }) => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <Banner />
       <ServicesSection services={services} />
       <WhyWeSection />

@@ -9,6 +9,7 @@ import { Container, Stack } from '@mui/material';
 import InfoSection from 'components/features/careers/position/general-section';
 import Additional from 'components/features/careers/position/additional';
 import HeaderDecoration from 'components/shared/header-decoration';
+import Head from 'next/head';
 
 interface IPositionPage {
   position: IPositionFull;
@@ -19,6 +20,12 @@ const Position: NextPage<IPositionPage> = ({ position }) => {
 
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <HeaderDecoration />
 
       <Container fixed>

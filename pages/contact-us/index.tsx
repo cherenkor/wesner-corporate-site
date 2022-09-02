@@ -10,6 +10,7 @@ import Success from 'components/features/contact-us/success';
 import ContactUsForm from '@components/features/contact-us/contact-us-form';
 import { FieldValues, set } from 'react-hook-form';
 import axios from 'axios';
+import Head from 'next/head';
 
 const ContactUs: NextPage = () => {
   const [isSubmited, setIsSubmited] = useState(false);
@@ -46,40 +47,48 @@ const ContactUs: NextPage = () => {
   };
 
   return (
-    <Container fixed>
-      {isSubmited ? (
-        <Success />
-      ) : (
-        <Stack
-          display="grid"
-          gridTemplateColumns={{ xs: '1fr', lg: '1fr 456px' }}
-          pt={{ xs: 6, lg: 14 }}
-          pb={{ xs: 2, md: 3 }}
-          rowGap={{ xs: 5, lg: 6 }}
-          columnGap={12}
-        >
-          <Title />
-          <Image src={StartDecoration} alt="" priority />
-          <Box gridColumn={{ xs: 1, lg: 2 }} gridRow={{ xs: 2, lg: '1/3' }}>
-            <ContactUsForm onSubmit={onFormSubmit} isLoading={isLoading} />
-            <Snackbar
-              anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-              onClose={handleClose}
-              open={snackBar.open}
-              autoHideDuration={2000}
-            >
-              <Alert
-                onClose={() => setSnackBar({ open: false, message: '' })}
-                severity="error"
-                sx={{ bgcolor: 'error.main', color: 'grey.300' }}
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
+      <Container fixed>
+        {isSubmited ? (
+          <Success />
+        ) : (
+          <Stack
+            display="grid"
+            gridTemplateColumns={{ xs: '1fr', lg: '1fr 456px' }}
+            pt={{ xs: 6, lg: 14 }}
+            pb={{ xs: 2, md: 3 }}
+            rowGap={{ xs: 5, lg: 6 }}
+            columnGap={12}
+          >
+            <Title />
+            <Image src={StartDecoration} alt="" priority />
+            <Box gridColumn={{ xs: 1, lg: 2 }} gridRow={{ xs: 2, lg: '1/3' }}>
+              <ContactUsForm onSubmit={onFormSubmit} isLoading={isLoading} />
+              <Snackbar
+                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                onClose={handleClose}
+                open={snackBar.open}
+                autoHideDuration={2000}
               >
-                {snackBar.message}
-              </Alert>
-            </Snackbar>
-          </Box>
-        </Stack>
-      )}
-    </Container>
+                <Alert
+                  onClose={() => setSnackBar({ open: false, message: '' })}
+                  severity="error"
+                  sx={{ bgcolor: 'error.main', color: 'grey.300' }}
+                >
+                  {snackBar.message}
+                </Alert>
+              </Snackbar>
+            </Box>
+          </Stack>
+        )}
+      </Container>
+    </>
   );
 };
 

@@ -84,7 +84,7 @@ export default function CaseStudiesList({
         <Stack
           direction="row"
           gap={1}
-          sx={{ overflowX: 'auto' }}
+          sx={{ overflowX: 'auto', flexWrap: 'wrap' }}
           pb={{ xs: 5, lg: 6 }}
         >
           {categories.map((item, index) => (

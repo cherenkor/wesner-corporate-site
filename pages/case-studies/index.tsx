@@ -8,6 +8,7 @@ import {
 } from 'data-utils/case-studies';
 import { ICaseStudy } from 'models/interfaces/case-strudies/case-studies.interface';
 import CaseStudiesList from '@components/features/case-studies/case-studies-list';
+import Head from 'next/head';
 
 interface ICaseStudies {
   caseStudies: ICaseStudy[];
@@ -17,6 +18,12 @@ interface ICaseStudies {
 const CaseStudies: NextPage<ICaseStudies> = ({ caseStudies, categories }) => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Place the meta description text here."
+        />
+      </Head>
       <CaseStudiesHeader />
       {!!caseStudies.length && (
         <CaseStudiesList caseStudies={caseStudies} categories={categories} />
