@@ -3,6 +3,17 @@ import { alpha, Components, Theme } from '@mui/material';
 
 export default function Menu(theme: Theme): Components {
   return {
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          boxShadow: theme.shadows[10],
+          backgroundColor: theme.palette.background.paper,
+          backdropFilter: 'blur(4px)',
+          marginTop: '0 !important',
+          padding: 0,
+        },
+      },
+    },
     MuiMenu: {
       styleOverrides: {
         root: {
