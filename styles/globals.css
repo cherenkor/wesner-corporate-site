@@ -8,11 +8,6 @@ h1, h2, h3, h4, h5, h6 {
     animation: 0.4s fadeIn forwards;
 }
 
-.effect-1,
-.effect-2 {
-  overflow: hidden;
-}
-
 ul,ol {
     margin: 0;
     padding-left: 24px;
