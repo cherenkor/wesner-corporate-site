@@ -12,7 +12,13 @@ export const LocaleSwitcher = () => {
   return (
     <Stack direction="row" gap={2}>
       {localesConfig.map(({ name, img }) => (
-        <NextLink key={name} href={route} locale={name} as={asPath}>
+        <NextLink
+          key={name}
+          href={route}
+          locale={name}
+          as={asPath}
+          prefetch={false}
+        >
           <Link
             component="button"
             sx={{

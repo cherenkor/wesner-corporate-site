@@ -24,7 +24,7 @@ export default function NavigationMenuItem({
           {(children || []).map(({ name, path }) => {
             const isActive = router.asPath.includes(path);
             return (
-              <NextLink key={name} href={path}>
+              <NextLink key={name} href={path} prefetch={false}>
                 <MenuItem
                   autoFocus={false}
                   sx={{

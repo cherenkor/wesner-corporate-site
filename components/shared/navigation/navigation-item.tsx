@@ -63,7 +63,7 @@ export default function NavigationItem({
       {!!children?.length ? (
         <NavigationMenuItem item={item} sx={linkStyles} />
       ) : (
-        <NextLink href={path} passHref={!children?.length}>
+        <NextLink href={path} passHref={!children?.length} prefetch={false}>
           <Link sx={linkStyles}>{name}</Link>
         </NextLink>
       )}
