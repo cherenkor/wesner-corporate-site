@@ -92,14 +92,14 @@ export default function Cookies({ open, setOpen }: IProps): JSX.Element {
               <NextLink href={ERoutes.Policy} passHref>
                 <Link color="inherit">Cookie Policy</Link>
               </NextLink>{' '}
-              or manage your settings at{' '}
+              {/* or manage your settings at{' '}
               <Link
                 color="inherit"
                 sx={{ cursor: 'pointer' }}
                 onClick={() => setPreferencesOpen(true)}
               >
                 Cookie Preferences.
-              </Link>
+              </Link> */}
             </Typography>
             <Stack width={1} direction="row" justifyContent="flex-end" mt={1}>
               <Button variant="outlined" onClick={onAccept}>
