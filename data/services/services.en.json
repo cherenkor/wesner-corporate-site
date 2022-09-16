@@ -6,17 +6,17 @@
     "iconUrl": "/services/enterprise.png",
     "whiteIconUrl": "/services/enterprise-white.png",
     "bannerUrl": "/services/enterprise-banner.png",
-    "description": "With the  new challenges and opportunities for connecting people, systems and processes it is important to choose right integration techniq.",
+    "description": "Today there are several challenges and opportunities to connect people and systems and processes that are important and valuable for us. So that we can choose the right integration techniques.",
     "subtitle": "Point-to-point Integration",
     "mainTexts": [
       {
-        "text": "The traditional solution to integration requirements has been point-to-point connections between the systems to be integrated."
+        "text": "Point-to-point integration between integrating systems is a traditional solution for integration requirements that is still used today."
       },
       {
-        "text": "The advantage  of such direct connections is that they can be created easily and quickly if necessary. Their decisive disadvantage : they do not scale. With point-to-point connections, the complexity of the overall system increases exponentially with each additional individual connection (spaghetti integration dilemma)."
+        "text": "The advantage of such direct connections is that they can be created easily and quickly when needed. but as a disadvantage, scalability is poorly. With point-to-point connections, the complexity of the overall system increases exponentially with each additional individual connection (spaghetti integration dilemma)."
       },
       {
-        "text": "What therefore represents a quick solution in individual cases becomes a complexity trap as a strategic approach in the event of strong company growth."
+        "text": "Text Text Text"
       }
     ],
     "features": [
@@ -24,10 +24,10 @@
         "title": "Hub and Spoke Integration",
         "paragraphs": [
           {
-            "text": "With the emergence of integration servers, the hope was linked to find a silver bullet out of the spaghetti integration dilemma mentioned above: EAI - Enterprise Application Integration. In theory, an EAI hub actually reduces the integration complexity in a hub-and-spoke scenario from nxm to n connections. In practice, however, we often find ourselves preferring to take a direct flight rather than changing planes in Frankfurt (the Lufthansa hub).",
+            "text": "Text Text Text.",
             "list": [
-              "Direct connections are always faster.",
-              "In addition, the latency of the handling in the hub (figuratively: the transfer) can be saved and eliminated as a possible source of error."
+              "Text Text Text.",
+              "Text Text Text."
             ]
           }
         ]
@@ -36,14 +36,14 @@
         "title": "Hybrid Integration",
         "paragraphs": [
           {
-            "text": "How would it be if it were possible today to connect both worlds with each other:",
+            "text": "combine both worlds, would it be more exciting and possible?:",
             "list": [
-              "The classic benefits of structured application integration.",
-              "With the modern possibilities of lightweight, direct linking of endpoints."
+              "text Text Text.",
+              "Text Text Text."
             ]
           },
           {
-            "text": "And all this on a platform that masters both types of integration and makes them available as required. A platform that is rightly called hybrid because it brings together the different scenarios on one platform with uniform handling, monitoring, error handling, etc."
+            "text": "Text Text Text."
           }
         ]
       }
@@ -74,10 +74,10 @@
     "subtitle": "Your Individual Solution",
     "mainTexts": [
       {
-        "text": "A mission-critical application is no longer an isolated solution. It not only has to do what it was designed for. It must also be seamlessly integrated into a company's systems and processes. Through the large number of development and integration projects, QUIBIQ has developed a  deep understanding of the processes in large and medium-sized companies."
+        "text": "A mission-critical application is no longer an isolated solution. It must also integrate seamlessly with a company's systems and processes. By working or participating in various development and integration projects, Wesner Software Development has deepened the company's competencies. The company thus has an understanding of the development of processes in large and medium-sized companies."
       },
       {
-        "text": "Where standard software reaches its limits and  seamlessly integrated, cross-system applications bring the decisive advantage , QUIBIQ can generate great added value for you with the development of your individual application."
+        "text": "Text Text Text."
       }
     ],
     "features": [
@@ -101,7 +101,7 @@
         "title": "Offshoring if required",
         "paragraphs": [
           {
-            "text": "Via our associated partner company Nexion in Bolivia, we can also provide additional, cost-effective .Net and integration development resources in the quality we have come to expect for your projects."
+            "text": "Text Text Text."
           }
         ]
       }
@@ -132,14 +132,14 @@
     "subtitle": "Play it safe with our support",
     "mainTexts": [
       {
-        "text": "Taking over your integration solution in our support means:",
+        "text": "we take over your integration solution in the following:",
         "list": [
-          "Our support engineers are  specially trained for your solution  and are available to you on a dedicated number.",
-          "Solutions not developed by us are audited by us in advance as part of a  health check.",
-          "Detailed documentation is created for our BizTalk and Azure specialists.",
-          "In the event of support, our employees are available to you  within defined response times (up to 15 minutes) , access your solution remotely if necessary and provide you with competent support in troubleshooting; if necessary also on site.",
-          "By agreement, we also  guarantee the recovery times of your solution.",
-          "We are happy to carry out all the necessary managed tasks for the operation of your solution and always keep it up to date with the latest technology."
+          "Text Text Text.",
+          "Text Text Text",
+          "Text Text Text",
+          "Text text Text.",
+          "Text Text Text.",
+          "Text."
         ]
       }
     ],
