@@ -1,50 +1,50 @@
 [
   {
     "id": 0,
-    "name": "Albert Flores",
-    "position": "Ruby On Rails Developer",
-    "image": "images/company/team/albert.png"
+    "name": "Leer",
+    "position": "Leer",
+    "image": "Leer"
   },
   {
     "id": 1,
-    "name": "Bessie Cooper",
-    "position": "Information Architect",
-    "image": "images/company/team/bessie.png"
+    "name": "Leer",
+    "position": "Leeer",
+    "image": "Leer"
   },
   {
     "id": 2,
-    "name": "Jenny Wilson",
-    "position": "Python Developer",
-    "image": "images/company/team/jenny.png"
+    "name": "Leeer",
+    "position": "leer",
+    "image": "Leeer"
   },
   {
     "id": 3,
-    "name": "Andrew Wilson",
-    "position": "Python Developer",
-    "image": "images/company/team/andrew.png"
+    "name": "Leeer",
+    "position": "Leeer",
+    "image": "Leeer"
   },
   {
     "id": 4,
-    "name": "Guy Hawkins",
-    "position": "Ruby On Rails Developer",
-    "image": "images/company/team/guy.png"
+    "name": "Leeer",
+    "position": "Leeer",
+    "image": "Leer"
   },
   {
     "id": 5,
-    "name": "Savannah Nguyen",
-    "position": "Information Architect",
-    "image": "images/company/team/savanna.png"
+    "name": "Leeer",
+    "position": "Leeer",
+    "image": "Leeer"
   },
   {
     "id": 6,
-    "name": "Darlene Robertson",
-    "position": "Python Developer",
-    "image": "images/company/team/darlene.png"
+    "name": "Leeer",
+    "position": "Leeer",
+    "image": "Leeer"
   },
   {
     "id": 7,
-    "name": "Floyd Miles",
-    "position": "Python Developer",
-    "image": "images/company/team/floyd.png"
+    "name": "Leeer",
+    "position": "Leeer",
+    "image": "Leeer"
   }
 ]
