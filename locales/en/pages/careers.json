@@ -1,15 +1,15 @@
 {
   "careers": {
     "title": "Boost Your Career",
-    "description": "We are one of the world's leading Microsoft partners for the development of software solutions for today's networked corporate world.",
+    "description": "We are one of the world-wide partners of Microsoft and for this we work hard to develop software solutions.",
     "btnText": "Join Us",
     "benefitsTitle": "Our Benefits",
     "whyJoin": {
       "title": "Why You Should Join",
-      "description": "We are therefore looking forward to software developers and architects who enjoy connecting people, systems and processes with us in an innovative way using the latest software technology possibilities. We develop innovative solutions for the digital transformation of our customers with passion and creativity.",
+      "description": "text Text Text",
       "example": "For example:",
-      "listitem1": "50 million flight passengers go paperless.",
-      "listitem2": "Excavators report automatically from the construction site when they need a service technician."
+      "listitem1": "Text Text Text",
+      "listitem2": "Text Text Text"
     },
     "positionsTitle": "Open Positions",
     "backBtnText": "BACK TO JOBS LIST",
