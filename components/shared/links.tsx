@@ -16,7 +16,7 @@ export const WebSiteLink = (): JSX.Element => {
 export const MailToLink = (): JSX.Element => {
   return (
     <Link
-      href="mailto:support@wesner-software.de"
+      href="mailto:contact@wesner-software.de"
       target="_blank"
       underline="hover"
       sx={{ fontSize: 'inherit', lineHeight: 'inherit' }}

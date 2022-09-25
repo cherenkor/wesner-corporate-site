@@ -45,8 +45,8 @@ export default function FooterContacts(): JSX.Element {
       </Typography>
       <Stack direction="row" alignItems="center" gap={1}>
         <MailOutlineIcon sx={{ fontSize: 18 }} />
-        <Link href="mailto:support@wesner-software.de" sx={{ ...linkStyles }}>
-          support@wesner-software.de
+        <Link href="mailto:contact@wesner-software.de" sx={{ ...linkStyles }}>
+          contact@wesner-software.de
         </Link>
       </Stack>
       <Stack direction="row" alignItems="center" gap={1}>

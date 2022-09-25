@@ -3,23 +3,13 @@
     "title": "Unsere Expertise",
     "banner": {
       "title": "Die Punkte verbinden",
-      "description1": "Bei den Lösungen geht es immer um die Realisierung intelligenter Verbindungen von Menschen, Systemen und Prozessen auf Basis moderner, robuster Technologien – sicher, kompetent und immer nah an den spezifischen Kundenbedürfnissen: partnerschaftlich, gemeinsam vor Ort.",
-      "description2": "Wir sind für dich da. Unsere Spezialisierung auf Integration seit unserer Gründung im Jahr 2016 **(muss ein neuen Text folgen)."
+      "description1": "Bei den Lösungen geht es immer um die Realisierung intelligenter Verbindungen von Menschen, Systemen und Prozessen auf Basis moderner, robuster Technologien – sicher, kompetent und immer nah an den spezifischen Kundenbedürfnissen: partnerschaftlich, gemeinsam vor Ort."
     },
     "expertises": {
       "bizTalk": "Punkt-zu-Punkt-Integration mit Azure und BizTalk.",
       "dotNet": "Nahtlos integrierte Individualsoftware auf Basis von .Net.",
       "azure": "Nahtlos integriertes maschinelles Lernen auf Basis von Azure ML."
     },
-    "owner": {
-      "title": "Geschichte vom Besitzer",
-      "description": "text text text"
-    },
-    "roadmap": {
-      "item1": "Unternehmen gestartet",
-      "item2": "+ 25 zufriedene Kunden",
-      "item3": "Anerkennungspreis"
-    },
-    "companyTitle": "Unser Team"
+   
   }
 }
