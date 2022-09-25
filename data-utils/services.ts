@@ -7,7 +7,6 @@ import { TLocales } from '../types/locales';
 
 export const getServicesShortInfo = (locale: string): IService[] => {
   const services = require(`/data/services/services.${locale}.json`);
-
   return services.map((item: IService) => ({
     name: item.name,
     path: item.path,
