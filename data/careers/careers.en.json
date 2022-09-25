@@ -45,19 +45,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": "2",
-    "title": ".Net Developer",
-    "location": "Germany | Bremen",
-    "alocation": "Full-Time",
-    "role": "Engineer"
-  },
-  {
-    "id": "3",
-    "title": "Delivery Manager",
-    "location": "Germany | Bremen",
-    "alocation": "Full-Time",
-    "role": "Engineer"
   }
 ]

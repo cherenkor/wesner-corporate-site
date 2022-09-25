@@ -25,7 +25,7 @@ const Careers: NextPage<ICareersProps> = ({ positions }) => {
       </Head>
       <BannerSection />
       <Benefits />
-      <WhyJoin />
+      {/*<WhyJoin />*/}
       {!!positions?.length && <Positions positions={positions} />}
       <ContactUs />
     </>

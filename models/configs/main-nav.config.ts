@@ -23,16 +23,16 @@ export const useGetMainNavConfig = () => {
           name: t('navigation.servicesChildren.development'),
           path: `${ERoutes.Services}${EServicesRoutes.Development}`,
         },
-        {
-          name: t('navigation.servicesChildren.support'),
-          path: `${ERoutes.Services}${EServicesRoutes.Support}`,
-        },
+        // {
+        //   name: t('navigation.servicesChildren.support'),
+        //   path: `${ERoutes.Services}${EServicesRoutes.Support}`,
+        // },
       ],
     },
-    {
-      name: t('navigation.caseStudies'),
-      path: ERoutes.CaseStudies,
-    },
+    // {
+    //   name: t('navigation.caseStudies'),
+    //   path: ERoutes.CaseStudies,
+    // },
     {
       name: t('navigation.company'),
       path: ERoutes.Company,

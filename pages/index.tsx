@@ -25,7 +25,7 @@ const Home: NextPage<IHomePage> = ({ services }) => {
       </Head>
       <Banner />
       <ServicesSection services={services} />
-      <WhyWeSection />
+      {/*<WhyWeSection />*/}
       <AproachSection />
       <ContactUs />
     </>

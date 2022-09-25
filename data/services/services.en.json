@@ -14,9 +14,6 @@
       },
       {
         "text": "The advantage of such direct connections is that they can be created easily and quickly when needed. but as a disadvantage, scalability is poorly. With point-to-point connections, the complexity of the overall system increases exponentially with each additional individual connection (spaghetti integration dilemma)."
-      },
-      {
-        "text": "Text Text Text"
       }
     ],
     "features": [
@@ -75,9 +72,6 @@
     "mainTexts": [
       {
         "text": "A mission-critical application is no longer an isolated solution. It must also integrate seamlessly with a company's systems and processes. By working or participating in various development and integration projects, Wesner Software Development has deepened the company's competencies. The company thus has an understanding of the development of processes in large and medium-sized companies."
-      },
-      {
-        "text": "Text Text Text."
       }
     ],
     "features": [

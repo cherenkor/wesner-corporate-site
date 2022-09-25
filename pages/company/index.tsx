@@ -24,9 +24,9 @@ const Company: NextPage<ICompanyPage> = ({ team }) => {
       </Head>
       <Banner />
       <ExpertiseSection />
-      <Owner />
-      <Roadmap />
-      <Team team={team || []} />
+      {/*<Owner />*/}
+      {/*<Roadmap />*/}
+      {/*<Team team={team || []} />*/}
       <ContactUs />
     </>
   );
